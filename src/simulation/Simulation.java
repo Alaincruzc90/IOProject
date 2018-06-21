@@ -103,9 +103,10 @@ public class Simulation extends Thread{
                 // Now update the GUI
                 updateGUI(i+1);
             }
-            // Display run stats
-            int x = this.interfaceController.displayRunStatsWindow(globalStatistics.averageQueryLife(),globalStatistics.getExecutionModule().ddlAverageTime(),globalStatistics.getTransactionModule().ddlAverageTime(),globalStatistics.getQueryModule().ddlAverageTime(),globalStatistics.getProcessModule().ddlAverageTime(),globalStatistics.getExecutionModule().updateAverageTime(),globalStatistics.getTransactionModule().updateAverageTime(),globalStatistics.getQueryModule().updateAverageTime(),globalStatistics.getProcessModule().updateAverageTime(),globalStatistics.getExecutionModule().joinAverageTime(),globalStatistics.getTransactionModule().joinAverageTime(),globalStatistics.getQueryModule().joinAverageTime(),globalStatistics.getProcessModule().joinAverageTime(),globalStatistics.getExecutionModule().selectAverageTime(),globalStatistics.getTransactionModule().selectAverageTime(),globalStatistics.getQueryModule().selectAverageTime(),globalStatistics.getProcessModule().selectAverageTime());
+            // Display run statistics when a repetiton end.
+            int x = this.interfaceController.displayRunStatsWindow(globalStatistics.averageQueryLife(), globalStatistics.getExecutionModule().ddlAverageTime(), globalStatistics.getTransactionModule().ddlAverageTime(), globalStatistics.getQueryModule().ddlAverageTime(), globalStatistics.getProcessModule().ddlAverageTime(), globalStatistics.getExecutionModule().updateAverageTime(), globalStatistics.getTransactionModule().updateAverageTime(), globalStatistics.getQueryModule().updateAverageTime(), globalStatistics.getProcessModule().updateAverageTime(), globalStatistics.getExecutionModule().joinAverageTime(), globalStatistics.getTransactionModule().joinAverageTime(), globalStatistics.getQueryModule().joinAverageTime(), globalStatistics.getProcessModule().joinAverageTime(), globalStatistics.getExecutionModule().selectAverageTime(), globalStatistics.getTransactionModule().selectAverageTime(), globalStatistics.getQueryModule().selectAverageTime(), globalStatistics.getProcessModule().selectAverageTime());
         }
+        //Display the general simulation statistics.
         int y = this.interfaceController.displayFinalStatsWindow();
     }
 
@@ -228,8 +229,11 @@ public class Simulation extends Thread{
         return eventQueue;
     }
 
+    /*
+    ** Update the GUI controller statistics to display them on the simulation window.
+    ** @param repetitionNumber The number of the current repetition.
+     */
     private void updateGUI(int repetitionNumber) {
-        int runNumber = 0;
         int execModQueueLength = 0;
         int transacModQueueLength = 0;
         int queryModQueueLength = 0;
@@ -250,10 +254,10 @@ public class Simulation extends Thread{
         if (connectionModule != null) {
             serverRejectedConnnections = connectionModule.getConnectionsRejected();
         }
-        interfaceController.setSimParams(repetitionNumber,execModQueueLength, transacModQueueLength, queryModQueueLength, processModQueueLength, serverRejectedConnnections);
+        interfaceController.setSimParams(repetitionNumber, execModQueueLength, transacModQueueLength, queryModQueueLength, processModQueueLength, serverRejectedConnnections);
     }
 
     public void setGUIController(GUIController controller) {
-        this.interfaceController=controller;
+        this.interfaceController = controller;
     }
 }
