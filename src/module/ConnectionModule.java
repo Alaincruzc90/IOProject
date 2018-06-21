@@ -60,7 +60,7 @@ public class ConnectionModule extends Module {
 
     @Override
     public void sendQuery(Query query) {
-        if(numberOfConnections+1 < getMaxSize()) {
+        if(numberOfConnections < getMaxSize()) {
             numberOfConnections++;
             query.resetQueryModuleStats();
             getNextModule().receiveQuery(query);

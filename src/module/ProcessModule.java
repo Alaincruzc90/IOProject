@@ -47,16 +47,18 @@ public class ProcessModule extends Module {
                 getGlobalStatistics().addExecutedQuery();
                 getGlobalStatistics().addQueryTime(query.getTimeout()-query.getInitialTime());
 
-                // Reduce the number of connections by one.
-                getSimulation().reduceConnections();
-
                 // Now we need to add it to our list in order to later delete it.
                 queryList.add(query);
 
             }
         }
 
-        for (Query query: queryList) {getQueue().remove(query);}
+        // Remove the query from the queue.
+        for (Query query: queryList) {
+            getQueue().remove(query);
+            // Reduce the number of connections by one.
+            getSimulation().reduceConnections();
+        }
     }
 
     @Override
@@ -102,6 +104,8 @@ public class ProcessModule extends Module {
         if(query.getTimeout() >= getGlobalStatistics().getTimeRunning()) {
             // Simply send it to the next module if everything is ok.
             getNextModule().receiveQuery(query);
+        } else {
+            getSimulation().reduceConnections();
         }
 
         // First, lets check that we don't have expired queries.

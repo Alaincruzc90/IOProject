@@ -86,6 +86,11 @@ public class Simulation {
             eventQueue.add(arrivalEvent);
 
             while(globalStatistics.getTimeRunning() <= maxTime) {
+
+                if(globalStatistics.getTimeRunning()>600) {
+                    String hola = "";
+                }
+
                 // Let's get the event.
                 Event event = eventQueue.poll();
                 // Now we need to change the actual time of our simulation.
@@ -143,19 +148,30 @@ public class Simulation {
 
             case RETURN_RESULTS:
 
-                // Now, we need to close the connection, and also, modify the average life time of a query.
-                // First, let's save the query in a variable.
-                Query query = event.getQuery();
+                // Check that the query's connection time has not expired.
+                if(event.getQuery().getTimeout() >= globalStatistics.getTimeRunning()) {
 
-                // Now let's calculate how much time it took to finish.
-                double finishTime = globalStatistics.getTimeRunning() - query.getInitialTime();
+                    // Now, we need to close the connection, and also, modify the average life time of a query.
+                    // First, let's save the query in a variable.
+                    Query query = event.getQuery();
 
-                // Now let's modify the data to calculate the average life time of a query.
-                globalStatistics.addExecutedQuery();
-                globalStatistics.addQueryTime(finishTime);
+                    // Now let's calculate how much time it took to finish.
+                    double finishTime = globalStatistics.getTimeRunning() - query.getInitialTime();
 
-                // Now close the connection.
-                connectionModule.reduceConnections();
+                    // Now let's modify the data to calculate the average life time of a query.
+                    globalStatistics.addExecutedQuery();
+                    globalStatistics.addQueryTime(finishTime);
+
+                    // Now close the connection.
+                    connectionModule.reduceConnections();
+
+                } else {
+
+                    // Just close the connection.
+                    connectionModule.reduceConnections();
+
+                }
+
                 break;
         }
 
