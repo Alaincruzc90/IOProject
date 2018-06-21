@@ -97,8 +97,8 @@ public class QueryModule extends Module {
         } else {
 
             // Add the query to the queue and set it's initial time in queued.
-            getQueue().add(query);
             query.setInitialTimeInQueue(getGlobalStatistics().getTimeRunning());
+            getQueue().add(query);
 
         }
 

@@ -92,8 +92,8 @@ public class TransactionModule extends  Module {
             // We also need to make sure that there is no other query being executed, otherwise we can't go in.
             if(query.getQueryType() == QueryType.DDL && queryCount > 0) {
                 // Add it to the queue and set the query initial time in queue.
-                getQueue().add(query);
                 query.setInitialTimeInQueue(getGlobalStatistics().getTimeRunning());
+                getQueue().add(query);
             } else {
 
                 // Add the new event.
@@ -103,8 +103,8 @@ public class TransactionModule extends  Module {
 
         } else {
             // Add it to the queue and set the query initial time in queue.
-            getQueue().add(query);
             query.setInitialTimeInQueue(getGlobalStatistics().getTimeRunning());
+            getQueue().add(query);
         }
 
 
@@ -174,8 +174,8 @@ public class TransactionModule extends  Module {
         // Check that if we have a DDL query, then in order to enter, there must be no running queries.
         if(query.getQueryType() == QueryType.DDL && queryCount > 0) {
 
-            getQueue().add(query);
             query.setInitialTimeInQueue(getGlobalStatistics().getTimeRunning());
+            getQueue().add(query);
 
         } else {
 
