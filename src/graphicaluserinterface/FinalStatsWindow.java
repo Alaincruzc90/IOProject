@@ -467,25 +467,97 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         jLabel26.setText(Double.toString(transacModAvgTotal));
         jLabel27.setText(Double.toString(querycModAvgTotal));
         jLabel28.setText(Double.toString(processModAvgTotal));
-        jLabel29.setText(Double.toString(connectionAvgLifeTime));
+        if(!(Double.isNaN(connectionAvgLifeTime))){
+            jLabel29.setText(Double.toString(connectionAvgLifeTime));
+        }else{
+            jLabel29.setText(Double.toString(0));
+        }
         jLabel30.setText("...");/*ToDo*/
-        jLabel31.setText(Double.toString(avgRejectedConnections));
-        jLabel32.setText(Double.toString(ddlAvgTimeExec));
-        jLabel33.setText(Double.toString(ddlAvgTimeTrans));
-        jLabel34.setText(Double.toString(ddlAvgTimeQuery));
-        jLabel35.setText(Double.toString(ddlAvgTimeProcess));
-        jLabel36.setText(Double.toString(updateAvgTimeExec));
-        jLabel37.setText(Double.toString(updateAvgTimeTrans));
-        jLabel38.setText(Double.toString(updateAvgTimeQuery));
-        jLabel39.setText(Double.toString(updateAvgTimeProcess));
-        jLabel40.setText(Double.toString(joinAvgTimeExec));
-        jLabel41.setText(Double.toString(joinAvgTimeTrans));
-        jLabel42.setText(Double.toString(joinAvgTimeQuery));
-        jLabel43.setText(Double.toString(joinAvgTimeProcess));
-        jLabel44.setText(Double.toString(selectAvgTimeExec));
-        jLabel45.setText(Double.toString(selectAvgTimeTrans));
-        jLabel46.setText(Double.toString(selectAvgTimeQuery));
-        jLabel47.setText(Double.toString(selectAvgTimeProcess));
+        if(!(Double.isNaN(avgRejectedConnections))){
+            jLabel31.setText(Double.toString(avgRejectedConnections));
+        }else{
+            jLabel31.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(ddlAvgTimeExec))){
+            jLabel32.setText(Double.toString(ddlAvgTimeExec));
+        }else{
+            jLabel32.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(ddlAvgTimeTrans))){
+            jLabel33.setText(Double.toString(ddlAvgTimeTrans));
+        }else {
+            jLabel33.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(ddlAvgTimeQuery))){
+            jLabel34.setText(Double.toString(ddlAvgTimeQuery));
+        }else {
+            jLabel34.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(ddlAvgTimeProcess))){
+            jLabel35.setText(Double.toString(ddlAvgTimeProcess));
+        }else {
+            jLabel35.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(updateAvgTimeExec))){
+            jLabel36.setText(Double.toString(updateAvgTimeExec));
+        }else {
+            jLabel36.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(updateAvgTimeTrans))){
+            jLabel37.setText(Double.toString(updateAvgTimeTrans));
+        }else {
+            jLabel37.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(updateAvgTimeQuery))){
+            jLabel38.setText(Double.toString(updateAvgTimeQuery));
+        }else {
+            jLabel38.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(updateAvgTimeProcess))){
+            jLabel39.setText(Double.toString(updateAvgTimeProcess));
+        }else {
+            jLabel39.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(joinAvgTimeExec))){
+            jLabel40.setText(Double.toString(joinAvgTimeExec));
+        }else {
+            jLabel40.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(joinAvgTimeTrans))){
+            jLabel41.setText(Double.toString(joinAvgTimeTrans));
+        }else {
+            jLabel41.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(joinAvgTimeQuery))){
+            jLabel42.setText(Double.toString(joinAvgTimeQuery));
+        }else {
+            jLabel42.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(joinAvgTimeProcess))){
+            jLabel43.setText(Double.toString(joinAvgTimeProcess));
+        }else {
+            jLabel43.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(selectAvgTimeExec))){
+            jLabel44.setText(Double.toString(selectAvgTimeExec));
+        }else {
+            jLabel44.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(selectAvgTimeTrans))){
+            jLabel45.setText(Double.toString(selectAvgTimeTrans));
+        }else {
+            jLabel45.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(selectAvgTimeQuery))){
+            jLabel46.setText(Double.toString(selectAvgTimeQuery));
+        }else {
+            jLabel46.setText(Double.toString(0));
+        }
+        if(!(Double.isNaN(selectAvgTimeProcess))){
+            jLabel47.setText(Double.toString(selectAvgTimeProcess));
+        }else {
+            jLabel47.setText(Double.toString(0));
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

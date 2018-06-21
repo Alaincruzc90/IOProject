@@ -246,7 +246,10 @@ public class GUIController {
         runStatistics.setVisible(true);
         runStatistics.setStats(runNumber, execModRunTotal / numberOfUpdates, transacModRunTotal / numberOfUpdates, querycModRunTotal / numberOfUpdates, processModRunTotal / numberOfUpdates, serverRejectedConnnections, connectionAverageLifeTime, avgDDLExec, avgDDLTrans, avgDDLQuery, avgDDLProcess, avgUpdateExec, avgUpdateTrans, avgUpdateaQuery, avgUpdateProcess, avgJoinExec, avgJoinTrans, avgJoinQuery, avgJoinProcess, avgSelectExec, avgSelectTrans, avgSelectQuery, avgSelectProcess);
         /*Save the simulation stats*/
-        execModAvgTotal += execModRunTotal / numberOfUpdates;
+        if(!Double.isNaN(execModRunTotal / numberOfUpdates)) {
+            execModAvgTotal += execModRunTotal / numberOfUpdates;
+        }
+
         transacModAvgTotal += transacModRunTotal / numberOfUpdates;
         querycModAvgTotal += querycModRunTotal / numberOfUpdates;
         processModAvgTotal += processModRunTotal / numberOfUpdates;
@@ -344,6 +347,40 @@ public class GUIController {
         transactionsAvailableProcesses = 0;
         executionAvailableProcesses = 0;
         timeOut = 0;
+        available = false;
+        runNumber = 1;
+        execModQueueLength = 0;
+        transacModQueueLength = 0;
+        queryModQueueLength = 0;
+        processModQueueLength = 0;
+        serverRejectedConnnections = 0;
+        numberOfUpdates = 0;
+        execModRunTotal = 0;
+        transacModRunTotal = 0;
+        querycModRunTotal = 0;
+        processModRunTotal = 0;
+        execModAvgTotal = 0;
+        transacModAvgTotal = 0;
+        querycModAvgTotal = 0;
+        processModAvgTotal = 0;
+        connectionAvgLifeTime = 0;
+        totalRejectedConnections = 0;
+        ddlAvgTimeExec = 0;
+        ddlAvgTimeTrans = 0;
+        ddlAvgTimeQuery = 0;
+        ddlAvgTimeProcess = 0;
+        updateAvgTimeExec = 0;
+        updateAvgTimeTrans = 0;
+        updateAvgTimeQuery = 0;
+        updateAvgTimeProcess = 0;
+        joinAvgTimeExec = 0;
+        joinAvgTimeTrans = 0;
+        joinAvgTimeQuery = 0;
+        joinAvgTimeProcess = 0;
+        selectAvgTimeExec = 0;
+        selectAvgTimeTrans = 0;
+        selectAvgTimeQuery = 0;
+        selectAvgTimeProcess = 0;
         this.startGUI();
     }
 }

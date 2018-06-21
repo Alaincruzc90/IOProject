@@ -78,7 +78,7 @@ public class Simulation extends Thread{
      */
     public void run() {
 
-        for(int i = 0; i <= repetitions; i++) {
+        for(int i = 0; i < repetitions; i++) {
 
             // Let's first reset everything.
             reset();
