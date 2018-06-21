@@ -155,6 +155,9 @@ public class Simulation {
                     // First, let's save the query in a variable.
                     Query query = event.getQuery();
 
+                    // Add to the module statistics the life time of the last query in this module.
+                    globalStatistics.getConnectionModule().addAverageTime(query, globalStatistics.getTimeRunning());
+
                     // Now let's calculate how much time it took to finish.
                     double finishTime = globalStatistics.getTimeRunning() - query.getInitialTime();
 

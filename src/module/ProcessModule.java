@@ -86,11 +86,11 @@ public class ProcessModule extends Module {
                     query));
         } else {
 
-            // If there is another query waiting for a thread, then add it to our queue.
-            getQueue().add(query);
 
+            // If there is another query waiting for a thread, then add it to our queue.
             // Also, add the time when the query was added to the queue. This is needed for the simulation statistics.
             query.setInitialTimeInQueue(getGlobalStatistics().getTimeRunning());
+            getQueue().add(query);
         }
     }
 
@@ -126,7 +126,7 @@ public class ProcessModule extends Module {
             getSimulation().getEventQueue().add(new Event(EventType.THREAD_CONNECTION,
                     getGlobalStatistics().getTimeRunning(),
                     getGlobalStatistics().getTimeRunning()+threadCreationTime,
-                    query));
+                    queuedQuery));
 
         } else {
             // If the queue is empty, simply allow more queries to be executed.
