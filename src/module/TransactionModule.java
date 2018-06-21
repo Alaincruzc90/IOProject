@@ -56,16 +56,18 @@ public class TransactionModule extends  Module {
                 getGlobalStatistics().addExecutedQuery();
                 getGlobalStatistics().addQueryTime(query.getTimeout()-query.getInitialTime());
 
-                // Reduce the number of connections by one.
-                getSimulation().reduceConnections();
-
                 // Now we need to add it to our list in order to later delete it.
                 queryList.add(query);
 
             }
         }
 
-        for (Query query: queryList) {getQueue().remove(query);}
+        // Remove the query from the queue.
+        for (Query query: queryList) {
+            getQueue().remove(query);
+            // Reduce the number of connections by one.
+            getSimulation().reduceConnections();
+        }
     }
 
     @Override
@@ -118,13 +120,15 @@ public class TransactionModule extends  Module {
         if(query.getTimeout() >= getGlobalStatistics().getTimeRunning()) {
             // Simply send it to the next module if everything is ok.
             getNextModule().receiveQuery(query);
+        } else {
+            getSimulation().reduceConnections();
         }
 
         // First, lets check that we don't have expired queries.
         checkForTimeout();
 
         // Check if the next query is a DDL. If so, we need to make sure that the query count is 0.
-        if(getQueue().peek() != null && getQueue().peek().getQueryType() == QueryType.DDL && queryCount != 0) {
+        if(getQueue().peek() != null && getQueue().peek().getQueryType() == QueryType.DDL && queryCount > 1) {
 
             // If this is the case, simply reduce the number of queries in execution.
             // This is needed, because we need to wait until we have no more queries running
@@ -161,25 +165,38 @@ public class TransactionModule extends  Module {
 
     }
 
+    /**
+     * Auxiliary function that will add a query to execution or the queue.
+     * @param query Query to be added.
+     */
     private void addQuery(Query query) {
 
-        // Add to the query count.
-        queryCount++;
+        // Check that if we have a DDL query, then in order to enter, there must be no running queries.
+        if(query.getQueryType() == QueryType.DDL && queryCount > 0) {
 
-        // First, we need to see how much time it is required to coordinate the query concurrence.
-        double queryTime = getRandomValueGenerator().generateValueTransactionCoordination(getMaxSize());
+            getQueue().add(query);
+            query.setInitialTimeInQueue(getGlobalStatistics().getTimeRunning());
 
-        // Save the number of blocks needed for the query, in the query.
-        query.setNumBlocks(getBlocksFromDisk(query));
+        } else {
 
-        // Now, we need to check how much time we need to load the needed blocks from disk.
-        queryTime += getRandomValueGenerator().generateValueLoadBlocks(query.getNumBlocks());
+            // Add to the query count.
+            queryCount++;
 
-        // Now we need to add the new event to the event queue.
-        getSimulation().getEventQueue().add(new Event(EventType.CONCURRENCE_COORDINATION,
-                getGlobalStatistics().getTimeRunning(),
-                getGlobalStatistics().getTimeRunning()+queryTime,
-                query));
+            // First, we need to see how much time it is required to coordinate the query concurrence.
+            double queryTime = getRandomValueGenerator().generateValueTransactionCoordination(getMaxSize());
+
+            // Save the number of blocks needed for the query, in the query.
+            query.setNumBlocks(getBlocksFromDisk(query));
+
+            // Now, we need to check how much time we need to load the needed blocks from disk.
+            queryTime += getRandomValueGenerator().generateValueLoadBlocks(query.getNumBlocks());
+
+            // Now we need to add the new event to the event queue.
+            getSimulation().getEventQueue().add(new Event(EventType.CONCURRENCE_COORDINATION,
+                    getGlobalStatistics().getTimeRunning(),
+                    getGlobalStatistics().getTimeRunning() + queryTime,
+                    query));
+        }
     }
 
 
