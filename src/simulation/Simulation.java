@@ -201,4 +201,13 @@ public class Simulation {
     public Queue<Event> getEventQueue() {
         return eventQueue;
     }
+    
+    public int getConnectionModuleLength() {
+        if(connectionModule.getQueue()!=null){
+            return connectionModule.getQueue().size();
+        }
+        else{
+            return 0;
+        }
+    }
 }
