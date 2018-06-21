@@ -6,6 +6,7 @@ public class DisplayConfigWindow extends javax.swing.JFrame {
     public DisplayConfigWindow() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     private StartWindow previousWindow;

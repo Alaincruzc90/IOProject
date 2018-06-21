@@ -16,6 +16,7 @@ public class SimulationWindow extends javax.swing.JFrame implements Runnable {
         initComponents();
         thread = new Thread(this);
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     private GUIController graphicalInterfaceController;
@@ -254,7 +255,13 @@ public class SimulationWindow extends javax.swing.JFrame implements Runnable {
             updateSystem();
             jLabel3.setText(hour + ":" + minute + ":" + second + " " + ampm);
             jLabel16.setText(Integer.toString(test));
-            //jLabel9.setText(Integer.toString(GUIController.getSimulation().getConnectionModuleLength()));
+            SimulationParams parameters = this.graphicalInterfaceController.getSimParams();
+            jLabel18.setText(Integer.toString(parameters.getRunNumber()));
+            jLabel9.setText(Integer.toString(parameters.getexecModQueueLength()));
+            jLabel10.setText(Integer.toString(parameters.gettransacModQueueLength()));
+            jLabel11.setText(Integer.toString(parameters.getqueryModQueueLength()));
+            jLabel12.setText(Integer.toString(parameters.getprocessModQueueLength()));
+            jLabel13.setText(Integer.toString(parameters.getserverRejectedConnnections()));
             ++test;
             if (this.slowMode) {
                 try {

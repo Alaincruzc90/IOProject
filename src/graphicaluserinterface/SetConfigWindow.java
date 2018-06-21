@@ -8,6 +8,7 @@ public class SetConfigWindow extends javax.swing.JFrame {
     public SetConfigWindow() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     private StartWindow previousWindow;

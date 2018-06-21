@@ -5,6 +5,8 @@ public class FinalStatsWindow extends javax.swing.JFrame {
     //Creates new form FinalStastWindow    
     public FinalStatsWindow() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     /**
@@ -66,6 +68,8 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -127,7 +131,7 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         jLabel8.setText("Process Module queue average length :");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel7.setText("Server rejected connections:");
+        jLabel7.setText("Average server rejected connections:");
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel19.setText("Average time of JOIN sentences in the Transaction Module:  ");
@@ -136,7 +140,7 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         jLabel20.setText("Average time of JOIN sentences in the Query Module:  ");
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("Simulation statistics");
+        jLabel1.setText("Final simulation statistics");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("Confidence interval of the average life time:");
@@ -188,18 +192,40 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         jLabel47.setText("jLabel47");
 
         jButton1.setText("Close program");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Try a new simulation");
 
         jButton4.setText("Repeat this simulation");
 
+        jLabel48.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel48.setText("Repetitions:");
+
+        jLabel49.setText("jLabel49");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1)
+                .addGap(22, 22, 22))
             .addGroup(layout.createSequentialGroup()
                 .addGap(59, 59, 59)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel48)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel49))
                     .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,21 +277,17 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                             .addComponent(jLabel27)
                             .addComponent(jLabel26)
                             .addComponent(jLabel3))))
-                .addContainerGap(63, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addGap(22, 22, 22))
+                .addContainerGap(146, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48)
+                    .addComponent(jLabel49))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -358,7 +380,7 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
                     .addComponent(jLabel47))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -368,6 +390,10 @@ public class FinalStatsWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     //@param args the command line arguments
     public static void main(String args[]) {
@@ -401,6 +427,33 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                 new FinalStatsWindow().setVisible(true);
             }
         });
+    }
+    
+    public void setFinalStats(int repetitions, double execModAvgTotal, double transacModAvgTotal, double querycModAvgTotal, double processModAvgTotal, double connectionAvgLifeTime, double avgRejectedConnections, double ddlAvgTimeExec, double ddlAvgTimeTrans, double ddlAvgTimeQuery, double ddlAvgTimeProcess, double updateAvgTimeExec, double updateAvgTimeTrans, double updateAvgTimeQuery, double updateAvgTimeProcess, double joinAvgTimeExec, double joinAvgTimeTrans, double joinAvgTimeQuery, double joinAvgTimeProcess, double selectAvgTimeExec, double selectAvgTimeTrans, double selectAvgTimeQuery, double selectAvgTimeProcess) {
+        jLabel49.setText(Integer.toString(repetitions));
+        jLabel3.setText(Double.toString(execModAvgTotal));
+        jLabel26.setText(Double.toString(transacModAvgTotal));
+        jLabel27.setText(Double.toString(querycModAvgTotal));
+        jLabel28.setText(Double.toString(processModAvgTotal));
+        jLabel29.setText(Double.toString(connectionAvgLifeTime));
+        jLabel30.setText("...");/*ToDo*/
+        jLabel31.setText(Double.toString(avgRejectedConnections));
+        jLabel32.setText(Double.toString(ddlAvgTimeExec));
+        jLabel33.setText(Double.toString(ddlAvgTimeTrans));
+        jLabel34.setText(Double.toString(ddlAvgTimeQuery));
+        jLabel35.setText(Double.toString(ddlAvgTimeProcess));
+        jLabel36.setText(Double.toString(updateAvgTimeExec));
+        jLabel37.setText(Double.toString(updateAvgTimeTrans));
+        jLabel38.setText(Double.toString(updateAvgTimeQuery));
+        jLabel39.setText(Double.toString(updateAvgTimeProcess));
+        jLabel40.setText(Double.toString(joinAvgTimeExec));
+        jLabel41.setText(Double.toString(joinAvgTimeTrans));
+        jLabel42.setText(Double.toString(joinAvgTimeQuery));
+        jLabel43.setText(Double.toString(joinAvgTimeProcess));
+        jLabel44.setText(Double.toString(selectAvgTimeExec));
+        jLabel45.setText(Double.toString(selectAvgTimeTrans));
+        jLabel46.setText(Double.toString(selectAvgTimeQuery));
+        jLabel47.setText(Double.toString(selectAvgTimeProcess));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -449,6 +502,8 @@ public class FinalStatsWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

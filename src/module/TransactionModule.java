@@ -221,4 +221,8 @@ public class TransactionModule extends  Module {
         // If not of any of those types, return 0.
         return 0;
     }
+
+    public int getQueueSize() {
+        return getQueue().size();
+    }
 }

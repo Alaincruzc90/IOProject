@@ -3,6 +3,7 @@ package simulation;
 import event.Event;
 import event.EventComparator;
 import event.EventType;
+import graphicaluserinterface.GUIController;
 import module.*;
 import query.Query;
 import randomvaluegenarator.RandomValueGenerator;
@@ -12,7 +13,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class Simulation {
+public class Simulation extends Thread{
 
     // Seconds to run the simulation.
     private double maxTime;
@@ -34,6 +35,8 @@ public class Simulation {
     private ExecutionModule executionModule;
     // Merely a option to allow printing in console each action and different stats.
     private boolean printable;
+    // GUI.
+    private GUIController interfaceController;
 
     /**
      * Class constructor.
@@ -73,7 +76,7 @@ public class Simulation {
     /**
      * Function that will control what happen with each event.
      */
-    public void runSimulation() {
+    public void run() {
 
         for(int i = 0; i <= repetitions; i++) {
 
@@ -97,9 +100,13 @@ public class Simulation {
                 globalStatistics.setTimeRunning(event.getEndTime());
                 // Now let's continue the simulation.
                 decideAction(event);
+                // Now update the GUI
+                updateGUI(i+1);
             }
-
+            // Display run stats
+            int x = this.interfaceController.displayRunStatsWindow(globalStatistics.averageQueryLife(),globalStatistics.getExecutionModule().ddlAverageTime(),globalStatistics.getTransactionModule().ddlAverageTime(),globalStatistics.getQueryModule().ddlAverageTime(),globalStatistics.getProcessModule().ddlAverageTime(),globalStatistics.getExecutionModule().updateAverageTime(),globalStatistics.getTransactionModule().updateAverageTime(),globalStatistics.getQueryModule().updateAverageTime(),globalStatistics.getProcessModule().updateAverageTime(),globalStatistics.getExecutionModule().joinAverageTime(),globalStatistics.getTransactionModule().joinAverageTime(),globalStatistics.getQueryModule().joinAverageTime(),globalStatistics.getProcessModule().joinAverageTime(),globalStatistics.getExecutionModule().selectAverageTime(),globalStatistics.getTransactionModule().selectAverageTime(),globalStatistics.getQueryModule().selectAverageTime(),globalStatistics.getProcessModule().selectAverageTime());
         }
+        int y = this.interfaceController.displayFinalStatsWindow();
     }
 
 
@@ -201,7 +208,7 @@ public class Simulation {
      * @param event Event that just finished.
      */
     private void printMoment(Event event) {
-        System.out.println("Even type: " + event.getEventType() + ". Actual time: " + globalStatistics.getTimeRunning() + ". Query type: " + event.getQuery().getQueryType());
+        //System.out.println("Even type: " + event.getEventType() + ". Actual time: " + globalStatistics.getTimeRunning() + ". Query type: " + event.getQuery().getQueryType());
     }
 
     /**
@@ -220,13 +227,33 @@ public class Simulation {
     public Queue<Event> getEventQueue() {
         return eventQueue;
     }
-    
-    public int getConnectionModuleLength() {
-        if(connectionModule.getQueue()!=null){
-            return connectionModule.getQueue().size();
+
+    private void updateGUI(int repetitionNumber) {
+        int runNumber = 0;
+        int execModQueueLength = 0;
+        int transacModQueueLength = 0;
+        int queryModQueueLength = 0;
+        int processModQueueLength = 0;
+        int serverRejectedConnnections = 0;
+        if (executionModule != null) {
+            execModQueueLength = executionModule.getQueueSize();
         }
-        else{
-            return 0;
+        if (transactionModule != null) {
+            transacModQueueLength = transactionModule.getQueueSize();
         }
+        if (queryModule != null) {
+            queryModQueueLength = queryModule.getQueueSize();
+        }
+        if (processModule != null) {
+            processModQueueLength = processModule.getQueueSize();
+        }
+        if (connectionModule != null) {
+            serverRejectedConnnections = connectionModule.getConnectionsRejected();
+        }
+        interfaceController.setSimParams(repetitionNumber,execModQueueLength, transacModQueueLength, queryModQueueLength, processModQueueLength, serverRejectedConnnections);
+    }
+
+    public void setGUIController(GUIController controller) {
+        this.interfaceController=controller;
     }
 }

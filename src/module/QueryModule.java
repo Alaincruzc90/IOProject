@@ -154,5 +154,9 @@ public class QueryModule extends Module {
 
     }
 
+    public int getQueueSize() {
+        return getQueue().size();
+    }
+
 
 }

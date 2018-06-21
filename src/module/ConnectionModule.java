@@ -77,4 +77,8 @@ public class ConnectionModule extends Module {
     public void reduceConnections() {
         numberOfConnections--;
     }
+
+    public int getConnectionsRejected() {
+        return connectionsRejected;
+    }
 }

@@ -1,5 +1,6 @@
 package graphicaluserinterface;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class StartWindow extends javax.swing.JFrame {
@@ -10,6 +11,7 @@ public class StartWindow extends javax.swing.JFrame {
     public StartWindow() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     private GUIController graphicalInterfaceController;

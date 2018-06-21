@@ -137,4 +137,8 @@ public class ExecutionModule extends Module {
         }
 
     }
+
+    public int getQueueSize() {
+        return getQueue().size();
+    }
 }
