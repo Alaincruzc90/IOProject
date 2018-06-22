@@ -11,6 +11,8 @@ public class GlobalStatistics {
 
     // Total time that the simulation has been running.
     private double timeRunning;
+    // Total number of connections that the system received.
+    private int totalConnectionsReceived;
     // Number of connections that has been rejected.
     private int connectionsRejected;
     // Given that we need to calculate the average life of a query, we need to know how much time have been used to execute queries
@@ -28,6 +30,7 @@ public class GlobalStatistics {
 
     public GlobalStatistics() {
         this.timeRunning = 0;
+        this.totalConnectionsReceived = 0;
         this.connectionsRejected = 0;
         this.queryTime = 0;
         this.queriesExecuted = 0;
@@ -52,6 +55,7 @@ public class GlobalStatistics {
      */
     public void reset() {
         this.timeRunning = 0;
+        this.totalConnectionsReceived = 0;
         this.connectionsRejected = 0;
         this.queryTime = 0;
         this.queriesExecuted = 0;
@@ -84,6 +88,8 @@ public class GlobalStatistics {
         this.queryTime += time;
     }
 
+    public void addTotalConnections() { this.totalConnectionsReceived++; }
+
 
     public double getTimeRunning() {
         return timeRunning;
@@ -91,6 +97,10 @@ public class GlobalStatistics {
 
     public void setTimeRunning(double timeRunning) {
         this.timeRunning = timeRunning;
+    }
+
+    public int getTotalConnectionsReceived() {
+        return totalConnectionsReceived;
     }
 
     public int getConnectionsRejected() {
