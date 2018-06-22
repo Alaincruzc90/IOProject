@@ -60,6 +60,10 @@ public class ConnectionModule extends Module {
 
     @Override
     public void sendQuery(Query query) {
+
+        // Increase the number of received connections.
+        this.getGlobalStatistics().addTotalConnections();
+
         if(numberOfConnections < getMaxSize()) {
             numberOfConnections++;
             query.resetQueryModuleStats();
