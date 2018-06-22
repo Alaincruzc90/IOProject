@@ -246,31 +246,64 @@ public class GUIController {
         runStatistics.setVisible(true);
         runStatistics.setStats(runNumber, execModRunTotal / numberOfUpdates, transacModRunTotal / numberOfUpdates, querycModRunTotal / numberOfUpdates, processModRunTotal / numberOfUpdates, serverRejectedConnnections, connectionAverageLifeTime, avgDDLExec, avgDDLTrans, avgDDLQuery, avgDDLProcess, avgUpdateExec, avgUpdateTrans, avgUpdateaQuery, avgUpdateProcess, avgJoinExec, avgJoinTrans, avgJoinQuery, avgJoinProcess, avgSelectExec, avgSelectTrans, avgSelectQuery, avgSelectProcess);
         /*Save the simulation stats*/
-        if(!Double.isNaN(execModRunTotal / numberOfUpdates)) {
-            execModAvgTotal += execModRunTotal / numberOfUpdates;
-        }
-
+        execModAvgTotal += execModRunTotal / numberOfUpdates;
         transacModAvgTotal += transacModRunTotal / numberOfUpdates;
         querycModAvgTotal += querycModRunTotal / numberOfUpdates;
         processModAvgTotal += processModRunTotal / numberOfUpdates;
-        connectionAvgLifeTime += connectionAverageLifeTime;
-        totalRejectedConnections += serverRejectedConnnections;
-        ddlAvgTimeExec += avgDDLExec;
-        ddlAvgTimeTrans += avgDDLTrans;
-        ddlAvgTimeQuery += avgDDLQuery;
-        ddlAvgTimeProcess += avgDDLProcess;
-        updateAvgTimeExec += avgUpdateExec;
-        updateAvgTimeTrans += avgUpdateTrans;
-        updateAvgTimeQuery += avgUpdateaQuery;
-        updateAvgTimeProcess += avgUpdateProcess;
-        joinAvgTimeExec += avgJoinExec;
-        joinAvgTimeTrans += avgJoinTrans;
-        joinAvgTimeQuery += avgJoinQuery;
-        joinAvgTimeProcess += avgJoinProcess;
-        selectAvgTimeExec += avgSelectExec;
-        selectAvgTimeTrans += avgSelectTrans;
-        selectAvgTimeQuery += avgSelectQuery;
-        selectAvgTimeProcess += avgSelectProcess;
+        if(!(Double.isNaN(connectionAverageLifeTime))) {
+            connectionAvgLifeTime += connectionAverageLifeTime;
+        }
+        if(!(Double.isNaN(serverRejectedConnnections))){
+            totalRejectedConnections += serverRejectedConnnections;
+        }
+        if(!(Double.isNaN(avgDDLExec))){
+            ddlAvgTimeExec += avgDDLExec;
+        }
+        if(!(Double.isNaN(avgDDLTrans))){
+            ddlAvgTimeTrans += avgDDLTrans;
+        }
+        if(!(Double.isNaN(avgDDLQuery))){
+            ddlAvgTimeQuery += avgDDLQuery;
+        }
+        if(!(Double.isNaN(avgDDLProcess))){
+            ddlAvgTimeProcess += avgDDLProcess;
+        }
+        if(!(Double.isNaN(avgUpdateExec))){
+            updateAvgTimeExec += avgUpdateExec;
+        }
+        if(!(Double.isNaN(avgUpdateTrans))){
+            updateAvgTimeTrans += avgUpdateTrans;
+        }
+        if(!(Double.isNaN(avgUpdateaQuery))){
+            updateAvgTimeQuery += avgUpdateaQuery;
+        }
+        if(!(Double.isNaN(avgUpdateProcess))){
+            updateAvgTimeProcess += avgUpdateProcess;
+        }
+        if(!(Double.isNaN(avgJoinExec))){
+            joinAvgTimeExec += avgJoinExec;
+        }
+        if(!(Double.isNaN(avgJoinTrans))){
+            joinAvgTimeTrans += avgJoinTrans;
+        }
+        if(!(Double.isNaN(avgJoinQuery))){
+            joinAvgTimeQuery += avgJoinQuery;
+        }
+        if(!(Double.isNaN(avgJoinProcess))){
+            joinAvgTimeProcess += avgJoinProcess;
+        }
+        if(!(Double.isNaN(avgSelectExec))){
+            selectAvgTimeExec += avgSelectExec;
+        }
+        if(!(Double.isNaN(avgSelectTrans))){
+            selectAvgTimeTrans += avgSelectTrans;
+        }
+        if(!(Double.isNaN(avgSelectQuery))){
+            selectAvgTimeQuery += avgSelectQuery;
+        }
+        if(!(Double.isNaN(avgSelectProcess))){
+            selectAvgTimeProcess += avgSelectProcess;
+        }
         /*Reset the run stats*/
         execModRunTotal = 0;
         transacModRunTotal = 0;
