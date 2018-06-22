@@ -90,10 +90,6 @@ public class Simulation extends Thread{
 
             while(globalStatistics.getTimeRunning() <= maxTime) {
 
-                if(globalStatistics.getTimeRunning()>600) {
-                    String hola = "";
-                }
-
                 // Let's get the event.
                 Event event = eventQueue.poll();
                 // Now we need to change the actual time of our simulation.
