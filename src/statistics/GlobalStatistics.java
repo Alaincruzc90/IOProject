@@ -1,9 +1,5 @@
 package statistics;
 
-import query.Query;
-
-import java.util.List;
-
 /**
  * Class where all our global statistics will be keep in.
  */
@@ -88,6 +84,9 @@ public class GlobalStatistics {
         this.queryTime += time;
     }
 
+    /**
+     * Add a new connection received.
+     */
     public void addTotalConnections() { this.totalConnectionsReceived++; }
 
 
