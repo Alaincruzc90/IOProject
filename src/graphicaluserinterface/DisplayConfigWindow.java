@@ -223,7 +223,7 @@ public class DisplayConfigWindow extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration //GEN-BEGIN:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

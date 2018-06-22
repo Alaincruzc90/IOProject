@@ -51,6 +51,7 @@ public class GUIController {
     private double querycModAvgTotal = 0;
     private double processModAvgTotal = 0;
     private double connectionAvgLifeTime = 0;
+    private double[] connectionAvgLifeTimeVector;
     private int totalRejectedConnections = 0;
     private double ddlAvgTimeExec = 0;
     private double ddlAvgTimeTrans = 0;
@@ -160,6 +161,7 @@ public class GUIController {
     */
     public void startSimulation() {
 
+        connectionAvgLifeTimeVector = new double [repetitions];
         this.simulationWindow = new SimulationWindow();
         simulationWindow.setController(this);
         simulationWindow.setVisible(true);
@@ -252,6 +254,10 @@ public class GUIController {
         processModAvgTotal += processModRunTotal / numberOfUpdates;
         if(!(Double.isNaN(connectionAverageLifeTime))) {
             connectionAvgLifeTime += connectionAverageLifeTime;
+            connectionAvgLifeTimeVector[runNumber-1]=connectionAverageLifeTime;
+        }
+        else{
+            connectionAvgLifeTimeVector[runNumber-1]=0;
         }
         if(!(Double.isNaN(serverRejectedConnnections))){
             totalRejectedConnections += serverRejectedConnnections;
@@ -322,7 +328,7 @@ public class GUIController {
         FinalStatsWindow finalStatistics = new FinalStatsWindow();
         finalStatistics.setController(this);
         finalStatistics.setVisible(true);
-        finalStatistics.setFinalStats(repetitions, execModAvgTotal / repetitions, transacModAvgTotal / repetitions, querycModAvgTotal / repetitions, processModAvgTotal / repetitions, connectionAvgLifeTime / repetitions, totalRejectedConnections / repetitions, ddlAvgTimeExec / repetitions, ddlAvgTimeTrans / repetitions, ddlAvgTimeQuery / repetitions, ddlAvgTimeProcess / repetitions, updateAvgTimeExec / repetitions, updateAvgTimeTrans / repetitions, updateAvgTimeQuery / repetitions, updateAvgTimeProcess / repetitions, joinAvgTimeExec / repetitions, joinAvgTimeTrans / repetitions, joinAvgTimeQuery / repetitions, joinAvgTimeProcess / repetitions, selectAvgTimeExec / repetitions, selectAvgTimeTrans / repetitions, selectAvgTimeQuery / repetitions, selectAvgTimeProcess / repetitions);
+        finalStatistics.setFinalStats(repetitions, execModAvgTotal / repetitions, transacModAvgTotal / repetitions, querycModAvgTotal / repetitions, processModAvgTotal / repetitions, connectionAvgLifeTime / repetitions, connectionAvgLifeTimeVector,totalRejectedConnections / repetitions, ddlAvgTimeExec / repetitions, ddlAvgTimeTrans / repetitions, ddlAvgTimeQuery / repetitions, ddlAvgTimeProcess / repetitions, updateAvgTimeExec / repetitions, updateAvgTimeTrans / repetitions, updateAvgTimeQuery / repetitions, updateAvgTimeProcess / repetitions, joinAvgTimeExec / repetitions, joinAvgTimeTrans / repetitions, joinAvgTimeQuery / repetitions, joinAvgTimeProcess / repetitions, selectAvgTimeExec / repetitions, selectAvgTimeTrans / repetitions, selectAvgTimeQuery / repetitions, selectAvgTimeProcess / repetitions);
         return 1;
     }
     

@@ -1,6 +1,7 @@
 package graphicaluserinterface;
 
 import javax.swing.JFrame;
+import java.text.DecimalFormat;
 
 public class RunStatsWindow extends javax.swing.JFrame {
 
@@ -10,6 +11,8 @@ public class RunStatsWindow extends javax.swing.JFrame {
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
     }
+
+    private static DecimalFormat decimalFormat = new DecimalFormat("#.####");
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -66,6 +69,28 @@ public class RunStatsWindow extends javax.swing.JFrame {
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -194,6 +219,50 @@ public class RunStatsWindow extends javax.swing.JFrame {
             }
         });
 
+        jLabel48.setText("queries");
+
+        jLabel49.setText("queries");
+
+        jLabel50.setText("queries");
+
+        jLabel51.setText("queries");
+
+        jLabel52.setText("seconds");
+
+        jLabel53.setText("seconds");
+
+        jLabel54.setText("connections");
+
+        jLabel55.setText("seconds");
+
+        jLabel56.setText("seconds");
+
+        jLabel57.setText("seconds");
+
+        jLabel58.setText("seconds");
+
+        jLabel59.setText("seconds");
+
+        jLabel60.setText("seconds");
+
+        jLabel61.setText("seconds");
+
+        jLabel62.setText("seconds");
+
+        jLabel63.setText("seconds");
+
+        jLabel64.setText("seconds");
+
+        jLabel65.setText("seconds");
+
+        jLabel66.setText("seconds");
+
+        jLabel67.setText("seconds");
+
+        jLabel68.setText("seconds");
+
+        jLabel69.setText("seconds");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -256,8 +325,33 @@ public class RunStatsWindow extends javax.swing.JFrame {
                             .addComponent(jLabel44)
                             .addComponent(jLabel45)
                             .addComponent(jLabel46)
-                            .addComponent(jLabel47))))
-                .addGap(57, 158, Short.MAX_VALUE))
+                            .addComponent(jLabel47))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel69)
+                            .addComponent(jLabel68)
+                            .addComponent(jLabel67)
+                            .addComponent(jLabel66)
+                            .addComponent(jLabel65)
+                            .addComponent(jLabel64)
+                            .addComponent(jLabel63)
+                            .addComponent(jLabel62)
+                            .addComponent(jLabel61)
+                            .addComponent(jLabel60)
+                            .addComponent(jLabel59)
+                            .addComponent(jLabel58)
+                            .addComponent(jLabel57)
+                            .addComponent(jLabel56)
+                            .addComponent(jLabel55)
+                            .addComponent(jLabel52)
+                            .addComponent(jLabel54)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel51)
+                                .addComponent(jLabel50)
+                                .addComponent(jLabel49)
+                                .addComponent(jLabel48)
+                                .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                .addGap(95, 95, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
@@ -275,91 +369,113 @@ public class RunStatsWindow extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel26))
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel48))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel27))
+                    .addComponent(jLabel27)
+                    .addComponent(jLabel49))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jLabel28))
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel50))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel29))
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel51))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jLabel30))
+                    .addComponent(jLabel30)
+                    .addComponent(jLabel53))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jLabel31))
+                    .addComponent(jLabel31)
+                    .addComponent(jLabel54))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(jLabel32))
+                    .addComponent(jLabel32)
+                    .addComponent(jLabel52))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(jLabel33))
+                    .addComponent(jLabel33)
+                    .addComponent(jLabel55))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(jLabel34))
+                    .addComponent(jLabel34)
+                    .addComponent(jLabel56))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
-                    .addComponent(jLabel35))
+                    .addComponent(jLabel35)
+                    .addComponent(jLabel57))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(jLabel36))
+                    .addComponent(jLabel36)
+                    .addComponent(jLabel58))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
-                    .addComponent(jLabel37))
+                    .addComponent(jLabel37)
+                    .addComponent(jLabel59))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(jLabel38))
+                    .addComponent(jLabel38)
+                    .addComponent(jLabel60))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
-                    .addComponent(jLabel39))
+                    .addComponent(jLabel39)
+                    .addComponent(jLabel61))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
-                    .addComponent(jLabel40))
+                    .addComponent(jLabel40)
+                    .addComponent(jLabel62))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
-                    .addComponent(jLabel41))
+                    .addComponent(jLabel41)
+                    .addComponent(jLabel63))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(jLabel42))
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel64))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
-                    .addComponent(jLabel43))
+                    .addComponent(jLabel43)
+                    .addComponent(jLabel65))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
-                    .addComponent(jLabel44))
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel66))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
-                    .addComponent(jLabel45))
+                    .addComponent(jLabel45)
+                    .addComponent(jLabel67))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel24)
-                    .addComponent(jLabel46))
+                    .addComponent(jLabel46)
+                    .addComponent(jLabel68))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
-                    .addComponent(jLabel47))
+                    .addComponent(jLabel47)
+                    .addComponent(jLabel69))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(23, 23, 23))
@@ -404,100 +520,100 @@ public class RunStatsWindow extends javax.swing.JFrame {
     }
 
     public void setStats(int runNumber, double execModQueueLength, double transModQueueLength, double queryModQueueLength, double processModQueueLength, int rejectedConnections, double connectionAverageLifeTime, double avgDDLExec, double avgDDLTrans, double avgDDLQuery, double avgDDLProcess, double avgUpdateExec, double avgUpdateTrans, double avgUpdateaQuery, double avgUpdateProcess, double avgJoinExec, double avgJoinTrans, double avgJoinQuery, double avgJoinProcess, double avgSelectExec, double avgSelectTrans, double avgSelectQuery, double avgSelectProcess) {
-        jLabel3.setText(Integer.toString(runNumber));
-        jLabel26.setText(Double.toString(execModQueueLength));
-        jLabel27.setText(Double.toString(transModQueueLength));
-        jLabel28.setText(Double.toString(queryModQueueLength));
-        jLabel29.setText(Double.toString(processModQueueLength));
+        jLabel3.setText(decimalFormat.format(runNumber));
+        jLabel26.setText(decimalFormat.format(execModQueueLength));
+        jLabel27.setText(decimalFormat.format(transModQueueLength));
+        jLabel28.setText(decimalFormat.format(queryModQueueLength));
+        jLabel29.setText(decimalFormat.format(processModQueueLength));
         if(!(Double.isNaN(connectionAverageLifeTime))){
-            jLabel30.setText(Double.toString(connectionAverageLifeTime));
+            jLabel30.setText(decimalFormat.format(connectionAverageLifeTime));
         }else {
-            jLabel30.setText(Double.toString(0));
+            jLabel30.setText(decimalFormat.format(0));
         }
-        jLabel31.setText(Integer.toString(rejectedConnections));
+        jLabel31.setText(decimalFormat.format(rejectedConnections));
         if(!(Double.isNaN(avgDDLExec))){
-            jLabel32.setText(Double.toString(avgDDLExec));
+            jLabel32.setText(decimalFormat.format(avgDDLExec));
         }else{
-            jLabel32.setText(Double.toString(0));
+            jLabel32.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgDDLTrans))){
-            jLabel33.setText(Double.toString(avgDDLTrans));
+            jLabel33.setText(decimalFormat.format(avgDDLTrans));
         }else{
-            jLabel33.setText(Double.toString(0));
+            jLabel33.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgDDLQuery))){
-            jLabel34.setText(Double.toString(avgDDLQuery));
+            jLabel34.setText(decimalFormat.format(avgDDLQuery));
         }else{
-            jLabel34.setText(Double.toString(0));
+            jLabel34.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgDDLProcess))){
-            jLabel35.setText(Double.toString(avgDDLProcess));
+            jLabel35.setText(decimalFormat.format(avgDDLProcess));
         }else{
-            jLabel35.setText(Double.toString(0));
+            jLabel35.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgUpdateExec))){
-            jLabel36.setText(Double.toString(avgUpdateExec));
+            jLabel36.setText(decimalFormat.format(avgUpdateExec));
         }else{
-            jLabel36.setText(Double.toString(0));
+            jLabel36.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgUpdateTrans))){
-            jLabel37.setText(Double.toString(avgUpdateTrans));
+            jLabel37.setText(decimalFormat.format(avgUpdateTrans));
         }else{
-            jLabel37.setText(Double.toString(0));
+            jLabel37.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgUpdateaQuery))){
-            jLabel38.setText(Double.toString(avgUpdateaQuery));
+            jLabel38.setText(decimalFormat.format(avgUpdateaQuery));
         }else{
-            jLabel38.setText(Double.toString(0));
+            jLabel38.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgUpdateProcess))){
-            jLabel39.setText(Double.toString(avgUpdateProcess));
+            jLabel39.setText(decimalFormat.format(avgUpdateProcess));
         }else{
-            jLabel39.setText(Double.toString(0));
+            jLabel39.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgJoinExec))){
-            jLabel40.setText(Double.toString(avgJoinExec));
+            jLabel40.setText(decimalFormat.format(avgJoinExec));
         }else{
-            jLabel40.setText(Double.toString(0));
+            jLabel40.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgJoinTrans))){
-            jLabel41.setText(Double.toString(avgJoinTrans));
+            jLabel41.setText(decimalFormat.format(avgJoinTrans));
         }else{
-            jLabel41.setText(Double.toString(0));
+            jLabel41.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgJoinQuery))){
-            jLabel42.setText(Double.toString(avgJoinQuery));
+            jLabel42.setText(decimalFormat.format(avgJoinQuery));
         }else{
-            jLabel42.setText(Double.toString(0));
+            jLabel42.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgJoinProcess))){
-            jLabel43.setText(Double.toString(avgJoinProcess));
+            jLabel43.setText(decimalFormat.format(avgJoinProcess));
         }else{
-            jLabel43.setText(Double.toString(0));
+            jLabel43.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgSelectExec))){
-            jLabel44.setText(Double.toString(avgSelectExec));
+            jLabel44.setText(decimalFormat.format(avgSelectExec));
         }else{
-            jLabel44.setText(Double.toString(0));
+            jLabel44.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgSelectTrans))){
-            jLabel45.setText(Double.toString(avgSelectTrans));
+            jLabel45.setText(decimalFormat.format(avgSelectTrans));
         }else{
-            jLabel45.setText(Double.toString(0));
+            jLabel45.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgSelectQuery))){
-            jLabel46.setText(Double.toString(avgSelectQuery));
+            jLabel46.setText(decimalFormat.format(avgSelectQuery));
         }else{
-            jLabel46.setText(Double.toString(0));
+            jLabel46.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgSelectProcess))){
-            jLabel47.setText(Double.toString(avgSelectProcess));
+            jLabel47.setText(decimalFormat.format(avgSelectProcess));
         }else {
-            jLabel47.setText(Double.toString(0));
+            jLabel47.setText(decimalFormat.format(0));
         }
     }
 
-    // Variables declaration //GEN-BEGIN:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -541,8 +657,30 @@ public class RunStatsWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
