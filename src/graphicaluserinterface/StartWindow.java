@@ -26,16 +26,16 @@ public class StartWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabelTitleDBMSSim = new javax.swing.JLabel();
         jButtonSetConfig = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonStartSim = new javax.swing.JButton();
+        jButtonDisplayConfig = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("DBMS Simulation ");
+        jLabelTitleDBMSSim.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabelTitleDBMSSim.setText("DBMS Simulation ");
 
         jButtonSetConfig.setText("Set simulation parameters");
         jButtonSetConfig.addActionListener(new java.awt.event.ActionListener() {
@@ -44,17 +44,17 @@ public class StartWindow extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Start simulation");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonStartSim.setText("Start simulation");
+        jButtonStartSim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonStartSimActionPerformed(evt);
             }
         });
 
-        jButton2.setText("See the current parameters");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonDisplayConfig.setText("See the current parameters");
+        jButtonDisplayConfig.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButtonDisplayConfigActionPerformed(evt);
             }
         });
 
@@ -66,29 +66,29 @@ public class StartWindow extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(jLabel1))
+                        .addComponent(jLabelTitleDBMSSim))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(44, 44, 44)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButtonSetConfig, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE))))
+                            .addComponent(jButtonDisplayConfig, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE))))
                 .addContainerGap(213, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonStartSim, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(jLabel1)
+                .addComponent(jLabelTitleDBMSSim)
                 .addGap(18, 18, 18)
                 .addComponent(jButtonSetConfig)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(jButtonDisplayConfig)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(jButtonStartSim)
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
@@ -105,7 +105,7 @@ public class StartWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSetConfigActionPerformed
 
     //See the current parameters button
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonDisplayConfigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDisplayConfigActionPerformed
         if (graphicalInterfaceController.getConfigSet()) {
             DisplayConfigWindow currentParams = new DisplayConfigWindow();
             currentParams.setPreviousWindow(this);
@@ -116,17 +116,17 @@ public class StartWindow extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "The parameters have not been set");
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonDisplayConfigActionPerformed
 
     //Start simulation button
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonStartSimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStartSimActionPerformed
         if (graphicalInterfaceController.getConfigSet()) {
             this.graphicalInterfaceController.startSimulation();
             this.dispose();
         } else {
             JOptionPane.showMessageDialog(null, "The parameters have not been set");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonStartSimActionPerformed
 
     //@param args the command line arguments     
     public static void main(String args[]) {
@@ -167,10 +167,10 @@ public class StartWindow extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration //GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonDisplayConfig;
     private javax.swing.JButton jButtonSetConfig;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButtonStartSim;
+    private javax.swing.JLabel jLabelTitleDBMSSim;
     // End of variables declaration//GEN-END:variables
 }

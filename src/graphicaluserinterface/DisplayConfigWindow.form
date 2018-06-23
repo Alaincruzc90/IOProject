@@ -26,32 +26,32 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelTitleSimParams" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonReturn" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelRepetitionsText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelSlowModeText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelTText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelMText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelPText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelNText" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabelMaximTimeText" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabelKText" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelRepetitionsValue" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelMaximTimeValue" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelKValue" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelNValue" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelPValue" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelMValue" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelTValue" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelSlowModeValue" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -64,56 +64,56 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabelTitleSimParams" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRepetitionsText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRepetitionsValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelMaximTimeText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelMaximTimeValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelKText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelKValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelNText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelNValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelPText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelPValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelMText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelMValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelTText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelTValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelSlowModeText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelSlowModeValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="31" max="32767" attributes="0"/>
-              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+              <Component id="jButtonReturn" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLabelTitleSimParams">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="18" style="1"/>
@@ -121,93 +121,93 @@
         <Property name="text" type="java.lang.String" value="Simulation parameters"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="jLabelRepetitionsText">
       <Properties>
         <Property name="text" type="java.lang.String" value="Number of times the simulation will be run :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="jLabelMaximTimeText">
       <Properties>
         <Property name="text" type="java.lang.String" value="Total time in seconds to run each simulation (Maximum time) :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="jLabelKText">
       <Properties>
         <Property name="text" type="java.lang.String" value="The number of concurrent connections that the system can handle (k) :"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="jLabelNText">
       <Properties>
         <Property name="text" type="java.lang.String" value="The number of concurrent queries processing that the system can handle (n) :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="jLabelPText">
       <Properties>
         <Property name="text" type="java.lang.String" value="The number of processes available for the execution of transactions (p) :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="jLabelMText">
       <Properties>
         <Property name="text" type="java.lang.String" value="The number of processes available to execute queries (m) :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
+    <Component class="javax.swing.JLabel" name="jLabelTText">
       <Properties>
         <Property name="text" type="java.lang.String" value="The timeout in seconds of the connections (t) :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="jLabelSlowModeText">
       <Properties>
         <Property name="text" type="java.lang.String" value="Slow mode :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
+    <Component class="javax.swing.JLabel" name="jLabelRepetitionsValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel10"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
+    <Component class="javax.swing.JLabel" name="jLabelMaximTimeValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel11"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel12">
+    <Component class="javax.swing.JLabel" name="jLabelKValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel12"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel13">
+    <Component class="javax.swing.JLabel" name="jLabelNValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel13"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel14">
+    <Component class="javax.swing.JLabel" name="jLabelPValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel14"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel15">
+    <Component class="javax.swing.JLabel" name="jLabelMValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel15"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel16">
+    <Component class="javax.swing.JLabel" name="jLabelTValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel16"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel17">
+    <Component class="javax.swing.JLabel" name="jLabelSlowModeValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel17"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="jButtonReturn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Return"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonReturnActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

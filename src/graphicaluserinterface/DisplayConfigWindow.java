@@ -22,17 +22,17 @@ public class DisplayConfigWindow extends javax.swing.JFrame {
     }
 
     public void setWindowText() {
-        jLabel10.setText(Integer.toString(graphicalInterfaceController.getRepetitions()));
-        jLabel11.setText(Double.toString(graphicalInterfaceController.getSimulationTime()));
-        jLabel12.setText(Integer.toString(graphicalInterfaceController.getConcurrentConnections()));
-        jLabel13.setText(Integer.toString(graphicalInterfaceController.getProcessingAvailableProcesses()));
-        jLabel14.setText(Integer.toString(graphicalInterfaceController.getTransactionsAvailableProcesses()));
-        jLabel15.setText(Integer.toString(graphicalInterfaceController.getExecutionAvailableProcesses()));
-        jLabel16.setText(Double.toString(graphicalInterfaceController.getTimeOut()));
+        jLabelRepetitionsValue.setText(Integer.toString(graphicalInterfaceController.getRepetitions()));
+        jLabelMaximTimeValue.setText(Double.toString(graphicalInterfaceController.getSimulationTime()));
+        jLabelKValue.setText(Integer.toString(graphicalInterfaceController.getConcurrentConnections()));
+        jLabelNValue.setText(Integer.toString(graphicalInterfaceController.getProcessingAvailableProcesses()));
+        jLabelPValue.setText(Integer.toString(graphicalInterfaceController.getTransactionsAvailableProcesses()));
+        jLabelMValue.setText(Integer.toString(graphicalInterfaceController.getExecutionAvailableProcesses()));
+        jLabelTValue.setText(Double.toString(graphicalInterfaceController.getTimeOut()));
         if (graphicalInterfaceController.getSlowMode()) {
-            jLabel17.setText("Yes");
+            jLabelSlowModeValue.setText("Yes");
         } else {
-            jLabel17.setText("No");
+            jLabelSlowModeValue.setText("No");
         }
     }
 
@@ -43,67 +43,67 @@ public class DisplayConfigWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        jLabelTitleSimParams = new javax.swing.JLabel();
+        jLabelRepetitionsText = new javax.swing.JLabel();
+        jLabelMaximTimeText = new javax.swing.JLabel();
+        jLabelKText = new javax.swing.JLabel();
+        jLabelNText = new javax.swing.JLabel();
+        jLabelPText = new javax.swing.JLabel();
+        jLabelMText = new javax.swing.JLabel();
+        jLabelTText = new javax.swing.JLabel();
+        jLabelSlowModeText = new javax.swing.JLabel();
+        jLabelRepetitionsValue = new javax.swing.JLabel();
+        jLabelMaximTimeValue = new javax.swing.JLabel();
+        jLabelKValue = new javax.swing.JLabel();
+        jLabelNValue = new javax.swing.JLabel();
+        jLabelPValue = new javax.swing.JLabel();
+        jLabelMValue = new javax.swing.JLabel();
+        jLabelTValue = new javax.swing.JLabel();
+        jLabelSlowModeValue = new javax.swing.JLabel();
+        jButtonReturn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("Simulation parameters");
+        jLabelTitleSimParams.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabelTitleSimParams.setText("Simulation parameters");
 
-        jLabel2.setText("Number of times the simulation will be run :");
+        jLabelRepetitionsText.setText("Number of times the simulation will be run :");
 
-        jLabel3.setText("Total time in seconds to run each simulation (Maximum time) :");
+        jLabelMaximTimeText.setText("Total time in seconds to run each simulation (Maximum time) :");
 
-        jLabel4.setText("The number of concurrent connections that the system can handle (k) :");
-        jLabel4.setToolTipText("");
+        jLabelKText.setText("The number of concurrent connections that the system can handle (k) :");
+        jLabelKText.setToolTipText("");
 
-        jLabel5.setText("The number of concurrent queries processing that the system can handle (n) :");
+        jLabelNText.setText("The number of concurrent queries processing that the system can handle (n) :");
 
-        jLabel6.setText("The number of processes available for the execution of transactions (p) :");
+        jLabelPText.setText("The number of processes available for the execution of transactions (p) :");
 
-        jLabel7.setText("The number of processes available to execute queries (m) :");
+        jLabelMText.setText("The number of processes available to execute queries (m) :");
 
-        jLabel8.setText("The timeout in seconds of the connections (t) :");
+        jLabelTText.setText("The timeout in seconds of the connections (t) :");
 
-        jLabel9.setText("Slow mode :");
+        jLabelSlowModeText.setText("Slow mode :");
 
-        jLabel10.setText("jLabel10");
+        jLabelRepetitionsValue.setText("jLabel10");
 
-        jLabel11.setText("jLabel11");
+        jLabelMaximTimeValue.setText("jLabel11");
 
-        jLabel12.setText("jLabel12");
+        jLabelKValue.setText("jLabel12");
 
-        jLabel13.setText("jLabel13");
+        jLabelNValue.setText("jLabel13");
 
-        jLabel14.setText("jLabel14");
+        jLabelPValue.setText("jLabel14");
 
-        jLabel15.setText("jLabel15");
+        jLabelMValue.setText("jLabel15");
 
-        jLabel16.setText("jLabel16");
+        jLabelTValue.setText("jLabel16");
 
-        jLabel17.setText("jLabel17");
+        jLabelSlowModeValue.setText("jLabel17");
 
-        jButton2.setText("Return");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonReturn.setText("Return");
+        jButtonReturn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButtonReturnActionPerformed(evt);
             }
         });
 
@@ -114,81 +114,81 @@ public class DisplayConfigWindow extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
+                    .addComponent(jLabelTitleSimParams)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jButton2)
+                        .addComponent(jButtonReturn)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel9)
-                                .addComponent(jLabel8)
-                                .addComponent(jLabel7)
-                                .addComponent(jLabel6)
-                                .addComponent(jLabel5)
+                                .addComponent(jLabelRepetitionsText)
+                                .addComponent(jLabelSlowModeText)
+                                .addComponent(jLabelTText)
+                                .addComponent(jLabelMText)
+                                .addComponent(jLabelPText)
+                                .addComponent(jLabelNText)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(jLabelMaximTimeText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabelKText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel10)
-                                .addComponent(jLabel11)
-                                .addComponent(jLabel12)
-                                .addComponent(jLabel13)
-                                .addComponent(jLabel14)
-                                .addComponent(jLabel15)
-                                .addComponent(jLabel16)
-                                .addComponent(jLabel17)))))
+                                .addComponent(jLabelRepetitionsValue)
+                                .addComponent(jLabelMaximTimeValue)
+                                .addComponent(jLabelKValue)
+                                .addComponent(jLabelNValue)
+                                .addComponent(jLabelPValue)
+                                .addComponent(jLabelMValue)
+                                .addComponent(jLabelTValue)
+                                .addComponent(jLabelSlowModeValue)))))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jLabel1)
+                .addComponent(jLabelTitleSimParams)
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel10))
+                    .addComponent(jLabelRepetitionsText)
+                    .addComponent(jLabelRepetitionsValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel11))
+                    .addComponent(jLabelMaximTimeText)
+                    .addComponent(jLabelMaximTimeValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel12))
+                    .addComponent(jLabelKText)
+                    .addComponent(jLabelKValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel13))
+                    .addComponent(jLabelNText)
+                    .addComponent(jLabelNValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel14))
+                    .addComponent(jLabelPText)
+                    .addComponent(jLabelPValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel15))
+                    .addComponent(jLabelMText)
+                    .addComponent(jLabelMValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel16))
+                    .addComponent(jLabelTText)
+                    .addComponent(jLabelTValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel17))
+                    .addComponent(jLabelSlowModeText)
+                    .addComponent(jLabelSlowModeValue))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(jButtonReturn)
                 .addGap(26, 26, 26))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonReturnActionPerformed
         previousWindow.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonReturnActionPerformed
 
     //@param args the command line arguments
     public static void main(String args[]) {
@@ -224,23 +224,23 @@ public class DisplayConfigWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton jButtonReturn;
+    private javax.swing.JLabel jLabelKText;
+    private javax.swing.JLabel jLabelKValue;
+    private javax.swing.JLabel jLabelMText;
+    private javax.swing.JLabel jLabelMValue;
+    private javax.swing.JLabel jLabelMaximTimeText;
+    private javax.swing.JLabel jLabelMaximTimeValue;
+    private javax.swing.JLabel jLabelNText;
+    private javax.swing.JLabel jLabelNValue;
+    private javax.swing.JLabel jLabelPText;
+    private javax.swing.JLabel jLabelPValue;
+    private javax.swing.JLabel jLabelRepetitionsText;
+    private javax.swing.JLabel jLabelRepetitionsValue;
+    private javax.swing.JLabel jLabelSlowModeText;
+    private javax.swing.JLabel jLabelSlowModeValue;
+    private javax.swing.JLabel jLabelTText;
+    private javax.swing.JLabel jLabelTValue;
+    private javax.swing.JLabel jLabelTitleSimParams;
     // End of variables declaration//GEN-END:variables
 }

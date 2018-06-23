@@ -25,273 +25,273 @@ public class FinalStatsWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel48 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jLabel63 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
-        jLabel65 = new javax.swing.JLabel();
-        jLabel66 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
-        jLabel69 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
-        jLabel71 = new javax.swing.JLabel();
-        jLabel72 = new javax.swing.JLabel();
+        jLabelTimeJOINProcessText = new javax.swing.JLabel();
+        jLabelTimeSELECTExecText = new javax.swing.JLabel();
+        jLabelTimeSELECTTransText = new javax.swing.JLabel();
+        jLabelTimeSELECTQueryText = new javax.swing.JLabel();
+        jLabelTimeSELECTProcessText = new javax.swing.JLabel();
+        jLabelConnectAvLifeTimeText = new javax.swing.JLabel();
+        jLabelTimeDDLExecText = new javax.swing.JLabel();
+        jLabelTimeDDLTransText = new javax.swing.JLabel();
+        jLabelTimeDDLQueryText = new javax.swing.JLabel();
+        jLabelTimeDDLProcessText = new javax.swing.JLabel();
+        jLabelTimeUPDATEExecText = new javax.swing.JLabel();
+        jLabelTimeUPDATETransText = new javax.swing.JLabel();
+        jLabelTimeUPDATEQueryText = new javax.swing.JLabel();
+        jLabelTimeUPDATEProcessText = new javax.swing.JLabel();
+        jLabelTimeJOINExecText = new javax.swing.JLabel();
+        jLabelExecLengthText = new javax.swing.JLabel();
+        jLabelTransLengthText = new javax.swing.JLabel();
+        jLabelQueryLengthText = new javax.swing.JLabel();
+        jLabelModuleLengthText = new javax.swing.JLabel();
+        jLabelRejectedConnectionsText = new javax.swing.JLabel();
+        jLabelTimeJOINTransText = new javax.swing.JLabel();
+        jLabelTimeJOINQueryText = new javax.swing.JLabel();
+        jLabelTitleFinalSimStats = new javax.swing.JLabel();
+        jLabelConfidenceIntervalText = new javax.swing.JLabel();
+        jLabelExecLengthValue = new javax.swing.JLabel();
+        jLabelTransLengthValue = new javax.swing.JLabel();
+        jLabelQueryLengthValue = new javax.swing.JLabel();
+        jLabelModuleLengthValue = new javax.swing.JLabel();
+        jLabelConnectAvLifeTimeValue = new javax.swing.JLabel();
+        jLabelConfidenceIntervalValue = new javax.swing.JLabel();
+        jLabelRejectedConnectionsValue = new javax.swing.JLabel();
+        jLabelTimeDDLExecValue = new javax.swing.JLabel();
+        jLabelTimeDDLTransValue = new javax.swing.JLabel();
+        jLabelTimeDDLQueryValue = new javax.swing.JLabel();
+        jLabelTimeDDLProcessValue = new javax.swing.JLabel();
+        jLabelTimeUPDATEExecValue = new javax.swing.JLabel();
+        jLabelTimeUPDATETransValue = new javax.swing.JLabel();
+        jLabelTimeUPDATEQueryValue = new javax.swing.JLabel();
+        jLabelTimeUPDATEProcessValue = new javax.swing.JLabel();
+        jLabelTimeJOINExecValue = new javax.swing.JLabel();
+        jLabelTimeJOINTransactionValue = new javax.swing.JLabel();
+        jLabelTimeJOINQueryValue = new javax.swing.JLabel();
+        jLabelTimeJOINProcessValue = new javax.swing.JLabel();
+        jLabelTimeSELECTExecValue = new javax.swing.JLabel();
+        jLabelTimeSELECTTransValue = new javax.swing.JLabel();
+        jLabelTimeSELECTQueryValue = new javax.swing.JLabel();
+        jLabelTimeSELECTProcessValue = new javax.swing.JLabel();
+        jButtonClose = new javax.swing.JButton();
+        jButtonNew = new javax.swing.JButton();
+        jButtonRepeat = new javax.swing.JButton();
+        jLabelRepetitionsText = new javax.swing.JLabel();
+        jLabelRepetitionsValue = new javax.swing.JLabel();
+        jLabelQueriesText2 = new javax.swing.JLabel();
+        jLabelQueriesText = new javax.swing.JLabel();
+        jLabelQueriesText3 = new javax.swing.JLabel();
+        jLabelQueriesText4 = new javax.swing.JLabel();
+        jLabelSecondsText9 = new javax.swing.JLabel();
+        jLabelSecondsText10 = new javax.swing.JLabel();
+        jLabelConnectionsText = new javax.swing.JLabel();
+        jLabelSecondsText = new javax.swing.JLabel();
+        jLabelSecondsText2 = new javax.swing.JLabel();
+        jLabelSecondsText3 = new javax.swing.JLabel();
+        jLabelSecondsText4 = new javax.swing.JLabel();
+        jLabelSecondsText11 = new javax.swing.JLabel();
+        jLabelSecondsText12 = new javax.swing.JLabel();
+        jLabelSecondsText13 = new javax.swing.JLabel();
+        jLabelSecondsText14 = new javax.swing.JLabel();
+        jLabelSecondsText5 = new javax.swing.JLabel();
+        jLabelSecondsText6 = new javax.swing.JLabel();
+        jLabelSecondsText7 = new javax.swing.JLabel();
+        jLabelSecondsText8 = new javax.swing.JLabel();
+        jLabelSecondsText15 = new javax.swing.JLabel();
+        jLabelSecondsText16 = new javax.swing.JLabel();
+        jLabelSecondsText17 = new javax.swing.JLabel();
+        jLabelSecondsText18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel21.setText("Average time of JOIN sentences in the Process Module:  ");
+        jLabelTimeJOINProcessText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeJOINProcessText.setText("Average time of JOIN sentences in the Process Module:  ");
 
-        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel22.setText("Average time of SELECT sentences in the Execution Module:  ");
+        jLabelTimeSELECTExecText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeSELECTExecText.setText("Average time of SELECT sentences in the Execution Module:  ");
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel23.setText("Average time of SELECT sentences in the Transaction Module:  ");
+        jLabelTimeSELECTTransText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeSELECTTransText.setText("Average time of SELECT sentences in the Transaction Module:  ");
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel24.setText("Average time of SELECT sentences in the Query Module:  ");
+        jLabelTimeSELECTQueryText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeSELECTQueryText.setText("Average time of SELECT sentences in the Query Module:  ");
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel25.setText("Average time of SELECT sentences in the Process Module:  ");
+        jLabelTimeSELECTProcessText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeSELECTProcessText.setText("Average time of SELECT sentences in the Process Module:  ");
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel9.setText("Connection average life time:");
+        jLabelConnectAvLifeTimeText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelConnectAvLifeTimeText.setText("Connection average life time:");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel10.setText("Average time of DDL sentences in the Execution Module:  ");
+        jLabelTimeDDLExecText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeDDLExecText.setText("Average time of DDL sentences in the Execution Module:  ");
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel11.setText("Average time of DDL sentences in the Transaction Module:  ");
+        jLabelTimeDDLTransText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeDDLTransText.setText("Average time of DDL sentences in the Transaction Module:  ");
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel12.setText("Average time of DDL sentences in the Query Module:  ");
+        jLabelTimeDDLQueryText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeDDLQueryText.setText("Average time of DDL sentences in the Query Module:  ");
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel13.setText("Average time of DDL sentences in the Process Module:  ");
+        jLabelTimeDDLProcessText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeDDLProcessText.setText("Average time of DDL sentences in the Process Module:  ");
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel14.setText("Average time of UPDATE sentences in the Execution Module:  ");
+        jLabelTimeUPDATEExecText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeUPDATEExecText.setText("Average time of UPDATE sentences in the Execution Module:  ");
 
-        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel15.setText("Average time of UPDATE sentences in the Transaction Module:  ");
+        jLabelTimeUPDATETransText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeUPDATETransText.setText("Average time of UPDATE sentences in the Transaction Module:  ");
 
-        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel16.setText("Average time of UPDATE sentences in the Query Module:  ");
+        jLabelTimeUPDATEQueryText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeUPDATEQueryText.setText("Average time of UPDATE sentences in the Query Module:  ");
 
-        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel17.setText("Average time of UPDATE sentences in the Process Module:  ");
+        jLabelTimeUPDATEProcessText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeUPDATEProcessText.setText("Average time of UPDATE sentences in the Process Module:  ");
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel18.setText("Average time of JOIN sentences in the Execution Module:  ");
+        jLabelTimeJOINExecText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeJOINExecText.setText("Average time of JOIN sentences in the Execution Module:  ");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel4.setText("Execution Module queue average length :");
+        jLabelExecLengthText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelExecLengthText.setText("Execution Module queue average length :");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel5.setText("Transaction Module queue average length :");
+        jLabelTransLengthText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTransLengthText.setText("Transaction Module queue average length :");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel6.setText("Query Module queue average length :");
+        jLabelQueryLengthText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelQueryLengthText.setText("Query Module queue average length :");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel8.setText("Process Module queue average length :");
+        jLabelModuleLengthText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelModuleLengthText.setText("Process Module queue average length :");
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel7.setText("Average server rejected connections:");
+        jLabelRejectedConnectionsText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelRejectedConnectionsText.setText("Average server rejected connections:");
 
-        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel19.setText("Average time of JOIN sentences in the Transaction Module:  ");
+        jLabelTimeJOINTransText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeJOINTransText.setText("Average time of JOIN sentences in the Transaction Module:  ");
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel20.setText("Average time of JOIN sentences in the Query Module:  ");
+        jLabelTimeJOINQueryText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTimeJOINQueryText.setText("Average time of JOIN sentences in the Query Module:  ");
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("Final simulation statistics");
+        jLabelTitleFinalSimStats.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabelTitleFinalSimStats.setText("Final simulation statistics");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel2.setText("Confidence interval of the average life time:");
+        jLabelConfidenceIntervalText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelConfidenceIntervalText.setText("Confidence interval of the average life time:");
 
-        jLabel3.setText("jLabel3");
+        jLabelExecLengthValue.setText("jLabel3");
 
-        jLabel26.setText("jLabel26");
+        jLabelTransLengthValue.setText("jLabel26");
 
-        jLabel27.setText("jLabel27");
+        jLabelQueryLengthValue.setText("jLabel27");
 
-        jLabel28.setText("jLabel28");
+        jLabelModuleLengthValue.setText("jLabel28");
 
-        jLabel29.setText("jLabel29");
+        jLabelConnectAvLifeTimeValue.setText("jLabel29");
 
-        jLabel30.setText("jLabel30");
+        jLabelConfidenceIntervalValue.setText("jLabel30");
 
-        jLabel31.setText("jLabel31");
+        jLabelRejectedConnectionsValue.setText("jLabel31");
 
-        jLabel32.setText("jLabel32");
+        jLabelTimeDDLExecValue.setText("jLabel32");
 
-        jLabel33.setText("jLabel33");
+        jLabelTimeDDLTransValue.setText("jLabel33");
 
-        jLabel34.setText("jLabel34");
+        jLabelTimeDDLQueryValue.setText("jLabel34");
 
-        jLabel35.setText("jLabel35");
+        jLabelTimeDDLProcessValue.setText("jLabel35");
 
-        jLabel36.setText("jLabel36");
+        jLabelTimeUPDATEExecValue.setText("jLabel36");
 
-        jLabel37.setText("jLabel37");
+        jLabelTimeUPDATETransValue.setText("jLabel37");
 
-        jLabel38.setText("jLabel38");
+        jLabelTimeUPDATEQueryValue.setText("jLabel38");
 
-        jLabel39.setText("jLabel39");
+        jLabelTimeUPDATEProcessValue.setText("jLabel39");
 
-        jLabel40.setText("jLabel40");
+        jLabelTimeJOINExecValue.setText("jLabel40");
 
-        jLabel41.setText("jLabel41");
+        jLabelTimeJOINTransactionValue.setText("jLabel41");
 
-        jLabel42.setText("jLabel42");
+        jLabelTimeJOINQueryValue.setText("jLabel42");
 
-        jLabel43.setText("jLabel43");
+        jLabelTimeJOINProcessValue.setText("jLabel43");
 
-        jLabel44.setText("jLabel44");
+        jLabelTimeSELECTExecValue.setText("jLabel44");
 
-        jLabel45.setText("jLabel45");
+        jLabelTimeSELECTTransValue.setText("jLabel45");
 
-        jLabel46.setText("jLabel46");
+        jLabelTimeSELECTQueryValue.setText("jLabel46");
 
-        jLabel47.setText("jLabel47");
+        jLabelTimeSELECTProcessValue.setText("jLabel47");
 
-        jButton1.setText("Close program");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonClose.setText("Close program");
+        jButtonClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonCloseActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Try a new simulation");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonNew.setText("Try a new simulation");
+        jButtonNew.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButtonNewActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Repeat this simulation");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jButtonRepeat.setText("Repeat this simulation");
+        jButtonRepeat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jButtonRepeatActionPerformed(evt);
             }
         });
 
-        jLabel48.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel48.setText("Repetitions:");
+        jLabelRepetitionsText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelRepetitionsText.setText("Repetitions:");
 
-        jLabel49.setText("jLabel49");
+        jLabelRepetitionsValue.setText("jLabel49");
 
-        jLabel50.setText("queries");
+        jLabelQueriesText2.setText("queries");
 
-        jLabel51.setText("queries");
+        jLabelQueriesText.setText("queries");
 
-        jLabel52.setText("queries");
+        jLabelQueriesText3.setText("queries");
 
-        jLabel53.setText("queries");
+        jLabelQueriesText4.setText("queries");
 
-        jLabel54.setText("seconds");
+        jLabelSecondsText9.setText("seconds");
 
-        jLabel55.setText("seconds");
+        jLabelSecondsText10.setText("seconds");
 
-        jLabel56.setText("connections");
+        jLabelConnectionsText.setText("connections");
 
-        jLabel57.setText("seconds");
+        jLabelSecondsText.setText("seconds");
 
-        jLabel58.setText("seconds");
+        jLabelSecondsText2.setText("seconds");
 
-        jLabel59.setText("seconds");
+        jLabelSecondsText3.setText("seconds");
 
-        jLabel60.setText("seconds");
+        jLabelSecondsText4.setText("seconds");
 
-        jLabel61.setText("seconds");
+        jLabelSecondsText11.setText("seconds");
 
-        jLabel62.setText("seconds");
+        jLabelSecondsText12.setText("seconds");
 
-        jLabel63.setText("seconds");
+        jLabelSecondsText13.setText("seconds");
 
-        jLabel64.setText("seconds");
+        jLabelSecondsText14.setText("seconds");
 
-        jLabel65.setText("seconds");
+        jLabelSecondsText5.setText("seconds");
 
-        jLabel66.setText("seconds");
+        jLabelSecondsText6.setText("seconds");
 
-        jLabel67.setText("seconds");
+        jLabelSecondsText7.setText("seconds");
 
-        jLabel68.setText("seconds");
+        jLabelSecondsText8.setText("seconds");
 
-        jLabel69.setText("seconds");
+        jLabelSecondsText15.setText("seconds");
 
-        jLabel70.setText("seconds");
+        jLabelSecondsText16.setText("seconds");
 
-        jLabel71.setText("seconds");
+        jLabelSecondsText17.setText("seconds");
 
-        jLabel72.setText("seconds");
+        jLabelSecondsText18.setText("seconds");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -302,127 +302,127 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel20)
-                            .addComponent(jLabel21))
+                            .addComponent(jLabelTimeDDLExecText)
+                            .addComponent(jLabelTimeDDLTransText)
+                            .addComponent(jLabelTimeDDLQueryText)
+                            .addComponent(jLabelTimeDDLProcessText)
+                            .addComponent(jLabelTimeJOINExecText)
+                            .addComponent(jLabelTimeJOINTransText)
+                            .addComponent(jLabelTimeJOINQueryText)
+                            .addComponent(jLabelTimeJOINProcessText))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel43)
-                            .addComponent(jLabel42)
-                            .addComponent(jLabel41)
-                            .addComponent(jLabel40)
-                            .addComponent(jLabel35)
-                            .addComponent(jLabel34)
-                            .addComponent(jLabel33)
-                            .addComponent(jLabel32))
+                            .addComponent(jLabelTimeJOINProcessValue)
+                            .addComponent(jLabelTimeJOINQueryValue)
+                            .addComponent(jLabelTimeJOINTransactionValue)
+                            .addComponent(jLabelTimeJOINExecValue)
+                            .addComponent(jLabelTimeDDLProcessValue)
+                            .addComponent(jLabelTimeDDLQueryValue)
+                            .addComponent(jLabelTimeDDLTransValue)
+                            .addComponent(jLabelTimeDDLExecValue))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel57)
-                            .addComponent(jLabel58)
-                            .addComponent(jLabel59)
-                            .addComponent(jLabel60)
-                            .addComponent(jLabel65)
-                            .addComponent(jLabel66)
-                            .addComponent(jLabel67)
-                            .addComponent(jLabel68))
+                            .addComponent(jLabelSecondsText)
+                            .addComponent(jLabelSecondsText2)
+                            .addComponent(jLabelSecondsText3)
+                            .addComponent(jLabelSecondsText4)
+                            .addComponent(jLabelSecondsText5)
+                            .addComponent(jLabelSecondsText6)
+                            .addComponent(jLabelSecondsText7)
+                            .addComponent(jLabelSecondsText8))
                         .addGap(99, 607, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel48)
+                                .addComponent(jLabelRepetitionsText)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel49))
-                            .addComponent(jLabel1))
+                                .addComponent(jLabelRepetitionsValue))
+                            .addComponent(jLabelTitleFinalSimStats))
                         .addContainerGap(831, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel8))
+                            .addComponent(jLabelExecLengthText)
+                            .addComponent(jLabelTransLengthText)
+                            .addComponent(jLabelQueryLengthText)
+                            .addComponent(jLabelModuleLengthText))
                         .addGap(113, 113, 113)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel28)
-                            .addComponent(jLabel27)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel3))
+                            .addComponent(jLabelModuleLengthValue)
+                            .addComponent(jLabelQueryLengthValue)
+                            .addComponent(jLabelTransLengthValue)
+                            .addComponent(jLabelExecLengthValue))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel52)
-                            .addComponent(jLabel53)
-                            .addComponent(jLabel50)
-                            .addComponent(jLabel51))
+                            .addComponent(jLabelQueriesText3)
+                            .addComponent(jLabelQueriesText4)
+                            .addComponent(jLabelQueriesText2)
+                            .addComponent(jLabelQueriesText))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel14)
-                                    .addComponent(jLabel15)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel17))
+                                    .addComponent(jLabelTimeUPDATEExecText)
+                                    .addComponent(jLabelTimeUPDATETransText)
+                                    .addComponent(jLabelTimeUPDATEQueryText)
+                                    .addComponent(jLabelTimeUPDATEProcessText))
                                 .addGap(40, 40, 40)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel39)
-                                    .addComponent(jLabel38)
-                                    .addComponent(jLabel37)
-                                    .addComponent(jLabel36))
+                                    .addComponent(jLabelTimeUPDATEProcessValue)
+                                    .addComponent(jLabelTimeUPDATEQueryValue)
+                                    .addComponent(jLabelTimeUPDATETransValue)
+                                    .addComponent(jLabelTimeUPDATEExecValue))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel61)
-                                    .addComponent(jLabel62)
-                                    .addComponent(jLabel63)
-                                    .addComponent(jLabel64)))
+                                    .addComponent(jLabelSecondsText11)
+                                    .addComponent(jLabelSecondsText12)
+                                    .addComponent(jLabelSecondsText13)
+                                    .addComponent(jLabelSecondsText14)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel22)
-                                    .addComponent(jLabel23)
-                                    .addComponent(jLabel24)
-                                    .addComponent(jLabel25))
+                                    .addComponent(jLabelTimeSELECTExecText)
+                                    .addComponent(jLabelTimeSELECTTransText)
+                                    .addComponent(jLabelTimeSELECTQueryText)
+                                    .addComponent(jLabelTimeSELECTProcessText))
                                 .addGap(45, 45, 45)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel47)
-                                    .addComponent(jLabel46)
-                                    .addComponent(jLabel45)
-                                    .addComponent(jLabel44))
+                                    .addComponent(jLabelTimeSELECTProcessValue)
+                                    .addComponent(jLabelTimeSELECTQueryValue)
+                                    .addComponent(jLabelTimeSELECTTransValue)
+                                    .addComponent(jLabelTimeSELECTExecValue))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel69)
-                                    .addComponent(jLabel70)
-                                    .addComponent(jLabel71)
-                                    .addComponent(jLabel72)))
+                                    .addComponent(jLabelSecondsText15)
+                                    .addComponent(jLabelSecondsText16)
+                                    .addComponent(jLabelSecondsText17)
+                                    .addComponent(jLabelSecondsText18)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel9)
+                                    .addComponent(jLabelConnectAvLifeTimeText)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel7)))
+                                        .addComponent(jLabelConfidenceIntervalText, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabelRejectedConnectionsText)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel30)
+                                        .addComponent(jLabelConfidenceIntervalValue)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel55))
+                                        .addComponent(jLabelSecondsText10))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel31)
+                                        .addComponent(jLabelRejectedConnectionsValue)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel56))
+                                        .addComponent(jLabelConnectionsText))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel29)
+                                        .addComponent(jLabelConnectAvLifeTimeValue)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel54)))))
+                                        .addComponent(jLabelSecondsText9)))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addComponent(jButtonRepeat)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
+                .addComponent(jButtonNew)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(jButtonClose)
                 .addGap(37, 37, 37))
         );
         layout.setVerticalGroup(
@@ -431,11 +431,11 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addComponent(jLabel1)
+                        .addComponent(jLabelTitleFinalSimStats)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel48)
-                            .addComponent(jLabel49))
+                            .addComponent(jLabelRepetitionsText)
+                            .addComponent(jLabelRepetitionsValue))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 89, Short.MAX_VALUE)
@@ -444,171 +444,171 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                                 .addGap(36, 36, 36)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabel5)
+                                        .addComponent(jLabelTransLengthText)
                                         .addGap(28, 28, 28))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(jLabel51)
-                                                    .addComponent(jLabel3)
-                                                    .addComponent(jLabel4)
-                                                    .addComponent(jLabel9))
+                                                    .addComponent(jLabelQueriesText)
+                                                    .addComponent(jLabelExecLengthValue)
+                                                    .addComponent(jLabelExecLengthText)
+                                                    .addComponent(jLabelConnectAvLifeTimeText))
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(jLabel29)
-                                                    .addComponent(jLabel54))
+                                                    .addComponent(jLabelConnectAvLifeTimeValue)
+                                                    .addComponent(jLabelSecondsText9))
                                                 .addGap(6, 6, 6)))
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(jLabel50)
-                                                    .addComponent(jLabel26))
+                                                    .addComponent(jLabelQueriesText2)
+                                                    .addComponent(jLabelTransLengthValue))
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(jLabel27)
-                                                    .addComponent(jLabel52)
-                                                    .addComponent(jLabel6)))
-                                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING))
+                                                    .addComponent(jLabelQueryLengthValue)
+                                                    .addComponent(jLabelQueriesText3)
+                                                    .addComponent(jLabelQueryLengthText)))
+                                            .addComponent(jLabelRejectedConnectionsText, javax.swing.GroupLayout.Alignment.TRAILING))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel28)
-                                    .addComponent(jLabel53)))
+                                    .addComponent(jLabelModuleLengthText)
+                                    .addComponent(jLabelModuleLengthValue)
+                                    .addComponent(jLabelQueriesText4)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(57, 57, 57)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel30)
-                                    .addComponent(jLabel55))
+                                    .addComponent(jLabelConfidenceIntervalText)
+                                    .addComponent(jLabelConfidenceIntervalValue)
+                                    .addComponent(jLabelSecondsText10))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel31)
-                                    .addComponent(jLabel56))))
+                                    .addComponent(jLabelRejectedConnectionsValue)
+                                    .addComponent(jLabelConnectionsText))))
                         .addGap(18, 18, 18)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel36)
-                            .addComponent(jLabel61))
+                            .addComponent(jLabelTimeUPDATEExecText)
+                            .addComponent(jLabelTimeUPDATEExecValue)
+                            .addComponent(jLabelSecondsText11))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel37)
-                            .addComponent(jLabel62))
+                            .addComponent(jLabelTimeUPDATETransText)
+                            .addComponent(jLabelTimeUPDATETransValue)
+                            .addComponent(jLabelSecondsText12))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel38)
-                            .addComponent(jLabel63))
+                            .addComponent(jLabelTimeUPDATEQueryText)
+                            .addComponent(jLabelTimeUPDATEQueryValue)
+                            .addComponent(jLabelSecondsText13))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel39)
-                            .addComponent(jLabel64))
+                            .addComponent(jLabelTimeUPDATEProcessText)
+                            .addComponent(jLabelTimeUPDATEProcessValue)
+                            .addComponent(jLabelSecondsText14))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel22)
-                            .addComponent(jLabel44)
-                            .addComponent(jLabel69))
+                            .addComponent(jLabelTimeSELECTExecText)
+                            .addComponent(jLabelTimeSELECTExecValue)
+                            .addComponent(jLabelSecondsText15))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel45)
-                            .addComponent(jLabel70))
+                            .addComponent(jLabelTimeSELECTTransText)
+                            .addComponent(jLabelTimeSELECTTransValue)
+                            .addComponent(jLabelSecondsText16))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel24)
-                            .addComponent(jLabel46)
-                            .addComponent(jLabel71))
+                            .addComponent(jLabelTimeSELECTQueryText)
+                            .addComponent(jLabelTimeSELECTQueryValue)
+                            .addComponent(jLabelSecondsText17))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel25)
-                            .addComponent(jLabel47)
-                            .addComponent(jLabel72)))
+                            .addComponent(jLabelTimeSELECTProcessText)
+                            .addComponent(jLabelTimeSELECTProcessValue)
+                            .addComponent(jLabelSecondsText18)))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel10)
+                            .addComponent(jLabelTimeDDLExecText)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel11)
+                            .addComponent(jLabelTimeDDLTransText)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel12)
+                            .addComponent(jLabelTimeDDLQueryText)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel13)
+                            .addComponent(jLabelTimeDDLProcessText)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel18)
+                            .addComponent(jLabelTimeJOINExecText)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel19)
+                            .addComponent(jLabelTimeJOINTransText)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel20)
+                            .addComponent(jLabelTimeJOINQueryText)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel21))
+                            .addComponent(jLabelTimeJOINProcessText))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel32)
-                                .addComponent(jLabel57))
+                                .addComponent(jLabelTimeDDLExecValue)
+                                .addComponent(jLabelSecondsText))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel33)
-                                .addComponent(jLabel58))
+                                .addComponent(jLabelTimeDDLTransValue)
+                                .addComponent(jLabelSecondsText2))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel34)
-                                .addComponent(jLabel59))
+                                .addComponent(jLabelTimeDDLQueryValue)
+                                .addComponent(jLabelSecondsText3))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel35)
-                                .addComponent(jLabel60))
+                                .addComponent(jLabelTimeDDLProcessValue)
+                                .addComponent(jLabelSecondsText4))
                             .addGap(18, 18, 18)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel40)
-                                .addComponent(jLabel65))
+                                .addComponent(jLabelTimeJOINExecValue)
+                                .addComponent(jLabelSecondsText5))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel41)
-                                .addComponent(jLabel66))
+                                .addComponent(jLabelTimeJOINTransactionValue)
+                                .addComponent(jLabelSecondsText6))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel42)
-                                .addComponent(jLabel67))
+                                .addComponent(jLabelTimeJOINQueryValue)
+                                .addComponent(jLabelSecondsText7))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel43)
-                                .addComponent(jLabel68)))))
+                                .addComponent(jLabelTimeJOINProcessValue)
+                                .addComponent(jLabelSecondsText8)))))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton4))
+                    .addComponent(jButtonClose)
+                    .addComponent(jButtonNew)
+                    .addComponent(jButtonRepeat))
                 .addGap(25, 25, 25))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCloseActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonCloseActionPerformed
 
 
     
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jButtonRepeatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRepeatActionPerformed
         java.awt.Window win[] = java.awt.Window.getWindows();
         for (int i = 0; i < win.length; i++) {
             win[i].dispose();
         }
         this.graphicalInterfaceController.restartSameSimulation();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jButtonRepeatActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNewActionPerformed
         java.awt.Window win[] = java.awt.Window.getWindows();
         for (int i = 0; i < win.length; i++) {
             win[i].dispose();
         }
         this.graphicalInterfaceController.restartNewSimulation();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonNewActionPerformed
 
     //@param args the command line arguments
     public static void main(String args[]) {
@@ -642,100 +642,100 @@ public class FinalStatsWindow extends javax.swing.JFrame {
     }
     
     public void setFinalStats(int repetitions, double execModAvgTotal, double transacModAvgTotal, double querycModAvgTotal, double processModAvgTotal, double connectionAvgLifeTime, double[] connectionAvgLifeTimeVector,double avgRejectedConnections, double ddlAvgTimeExec, double ddlAvgTimeTrans, double ddlAvgTimeQuery, double ddlAvgTimeProcess, double updateAvgTimeExec, double updateAvgTimeTrans, double updateAvgTimeQuery, double updateAvgTimeProcess, double joinAvgTimeExec, double joinAvgTimeTrans, double joinAvgTimeQuery, double joinAvgTimeProcess, double selectAvgTimeExec, double selectAvgTimeTrans, double selectAvgTimeQuery, double selectAvgTimeProcess) {
-        jLabel49.setText(decimalFormat.format(repetitions));
-        jLabel3.setText(decimalFormat.format(execModAvgTotal));
-        jLabel26.setText(decimalFormat.format(transacModAvgTotal));
-        jLabel27.setText(decimalFormat.format(querycModAvgTotal));
-        jLabel28.setText(decimalFormat.format(processModAvgTotal));
+        jLabelRepetitionsValue.setText(decimalFormat.format(repetitions));
+        jLabelExecLengthValue.setText(decimalFormat.format(execModAvgTotal));
+        jLabelTransLengthValue.setText(decimalFormat.format(transacModAvgTotal));
+        jLabelQueryLengthValue.setText(decimalFormat.format(querycModAvgTotal));
+        jLabelModuleLengthValue.setText(decimalFormat.format(processModAvgTotal));
         if(!(Double.isNaN(connectionAvgLifeTime))){
-            jLabel29.setText(decimalFormat.format(connectionAvgLifeTime));
+            jLabelConnectAvLifeTimeValue.setText(decimalFormat.format(connectionAvgLifeTime));
         }else {
-            jLabel29.setText(decimalFormat.format(0));
+            jLabelConnectAvLifeTimeValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(avgRejectedConnections))){
-            jLabel31.setText(decimalFormat.format(avgRejectedConnections));
+            jLabelRejectedConnectionsValue.setText(decimalFormat.format(avgRejectedConnections));
         }else{
-            jLabel31.setText(decimalFormat.format(0));
+            jLabelRejectedConnectionsValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(ddlAvgTimeExec))){
-            jLabel32.setText(decimalFormat.format(ddlAvgTimeExec));
+            jLabelTimeDDLExecValue.setText(decimalFormat.format(ddlAvgTimeExec));
         }else{
-            jLabel32.setText(decimalFormat.format(0));
+            jLabelTimeDDLExecValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(ddlAvgTimeTrans))){
-            jLabel33.setText(decimalFormat.format(ddlAvgTimeTrans));
+            jLabelTimeDDLTransValue.setText(decimalFormat.format(ddlAvgTimeTrans));
         }else {
-            jLabel33.setText(decimalFormat.format(0));
+            jLabelTimeDDLTransValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(ddlAvgTimeQuery))){
-            jLabel34.setText(decimalFormat.format(ddlAvgTimeQuery));
+            jLabelTimeDDLQueryValue.setText(decimalFormat.format(ddlAvgTimeQuery));
         }else {
-            jLabel34.setText(decimalFormat.format(0));
+            jLabelTimeDDLQueryValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(ddlAvgTimeProcess))){
-            jLabel35.setText(decimalFormat.format(ddlAvgTimeProcess));
+            jLabelTimeDDLProcessValue.setText(decimalFormat.format(ddlAvgTimeProcess));
         }else {
-            jLabel35.setText(decimalFormat.format(0));
+            jLabelTimeDDLProcessValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(updateAvgTimeExec))){
-            jLabel36.setText(decimalFormat.format(updateAvgTimeExec));
+            jLabelTimeUPDATEExecValue.setText(decimalFormat.format(updateAvgTimeExec));
         }else {
-            jLabel36.setText(decimalFormat.format(0));
+            jLabelTimeUPDATEExecValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(updateAvgTimeTrans))){
-            jLabel37.setText(decimalFormat.format(updateAvgTimeTrans));
+            jLabelTimeUPDATETransValue.setText(decimalFormat.format(updateAvgTimeTrans));
         }else {
-            jLabel37.setText(decimalFormat.format(0));
+            jLabelTimeUPDATETransValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(updateAvgTimeQuery))){
-            jLabel38.setText(decimalFormat.format(updateAvgTimeQuery));
+            jLabelTimeUPDATEQueryValue.setText(decimalFormat.format(updateAvgTimeQuery));
         }else {
-            jLabel38.setText(decimalFormat.format(0));
+            jLabelTimeUPDATEQueryValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(updateAvgTimeProcess))){
-            jLabel39.setText(decimalFormat.format(updateAvgTimeProcess));
+            jLabelTimeUPDATEProcessValue.setText(decimalFormat.format(updateAvgTimeProcess));
         }else {
-            jLabel39.setText(decimalFormat.format(0));
+            jLabelTimeUPDATEProcessValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(joinAvgTimeExec))){
-            jLabel40.setText(decimalFormat.format(joinAvgTimeExec));
+            jLabelTimeJOINExecValue.setText(decimalFormat.format(joinAvgTimeExec));
         }else {
-            jLabel40.setText(decimalFormat.format(0));
+            jLabelTimeJOINExecValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(joinAvgTimeTrans))){
-            jLabel41.setText(decimalFormat.format(joinAvgTimeTrans));
+            jLabelTimeJOINTransactionValue.setText(decimalFormat.format(joinAvgTimeTrans));
         }else {
-            jLabel41.setText(decimalFormat.format(0));
+            jLabelTimeJOINTransactionValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(joinAvgTimeQuery))){
-            jLabel42.setText(decimalFormat.format(joinAvgTimeQuery));
+            jLabelTimeJOINQueryValue.setText(decimalFormat.format(joinAvgTimeQuery));
         }else {
-            jLabel42.setText(decimalFormat.format(0));
+            jLabelTimeJOINQueryValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(joinAvgTimeProcess))){
-            jLabel43.setText(decimalFormat.format(joinAvgTimeProcess));
+            jLabelTimeJOINProcessValue.setText(decimalFormat.format(joinAvgTimeProcess));
         }else {
-            jLabel43.setText(decimalFormat.format(0));
+            jLabelTimeJOINProcessValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(selectAvgTimeExec))){
-            jLabel44.setText(decimalFormat.format(selectAvgTimeExec));
+            jLabelTimeSELECTExecValue.setText(decimalFormat.format(selectAvgTimeExec));
         }else {
-            jLabel44.setText(decimalFormat.format(0));
+            jLabelTimeSELECTExecValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(selectAvgTimeTrans))){
-            jLabel45.setText(decimalFormat.format(selectAvgTimeTrans));
+            jLabelTimeSELECTTransValue.setText(decimalFormat.format(selectAvgTimeTrans));
         }else {
-            jLabel45.setText(decimalFormat.format(0));
+            jLabelTimeSELECTTransValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(selectAvgTimeQuery))){
-            jLabel46.setText(decimalFormat.format(selectAvgTimeQuery));
+            jLabelTimeSELECTQueryValue.setText(decimalFormat.format(selectAvgTimeQuery));
         }else {
-            jLabel46.setText(decimalFormat.format(0));
+            jLabelTimeSELECTQueryValue.setText(decimalFormat.format(0));
         }
         if(!(Double.isNaN(selectAvgTimeProcess))){
-            jLabel47.setText(decimalFormat.format(selectAvgTimeProcess));
+            jLabelTimeSELECTProcessValue.setText(decimalFormat.format(selectAvgTimeProcess));
         }else {
-            jLabel47.setText(decimalFormat.format(0));
+            jLabelTimeSELECTProcessValue.setText(decimalFormat.format(0));
         }
         // Calculate the confidence interval
         double media = connectionAvgLifeTime;
@@ -748,84 +748,84 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         double desviacionEstandar = Math.sqrt(varianza);
         // Using 1.96 as zα/2
         double result = 1.96 * desviacionEstandar / Math.sqrt(repetitions);
-        jLabel30.setText("[" + decimalFormat.format(media - result) + " , " + decimalFormat.format(media + result) + "]");
+        jLabelConfidenceIntervalValue.setText("[" + decimalFormat.format(media - result) + " , " + decimalFormat.format(media + result) + "]");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
-    private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton jButtonClose;
+    private javax.swing.JButton jButtonNew;
+    private javax.swing.JButton jButtonRepeat;
+    private javax.swing.JLabel jLabelConfidenceIntervalText;
+    private javax.swing.JLabel jLabelConfidenceIntervalValue;
+    private javax.swing.JLabel jLabelConnectAvLifeTimeText;
+    private javax.swing.JLabel jLabelConnectAvLifeTimeValue;
+    private javax.swing.JLabel jLabelConnectionsText;
+    private javax.swing.JLabel jLabelExecLengthText;
+    private javax.swing.JLabel jLabelExecLengthValue;
+    private javax.swing.JLabel jLabelModuleLengthText;
+    private javax.swing.JLabel jLabelModuleLengthValue;
+    private javax.swing.JLabel jLabelQueriesText;
+    private javax.swing.JLabel jLabelQueriesText2;
+    private javax.swing.JLabel jLabelQueriesText3;
+    private javax.swing.JLabel jLabelQueriesText4;
+    private javax.swing.JLabel jLabelQueryLengthText;
+    private javax.swing.JLabel jLabelQueryLengthValue;
+    private javax.swing.JLabel jLabelRejectedConnectionsText;
+    private javax.swing.JLabel jLabelRejectedConnectionsValue;
+    private javax.swing.JLabel jLabelRepetitionsText;
+    private javax.swing.JLabel jLabelRepetitionsValue;
+    private javax.swing.JLabel jLabelSecondsText;
+    private javax.swing.JLabel jLabelSecondsText10;
+    private javax.swing.JLabel jLabelSecondsText11;
+    private javax.swing.JLabel jLabelSecondsText12;
+    private javax.swing.JLabel jLabelSecondsText13;
+    private javax.swing.JLabel jLabelSecondsText14;
+    private javax.swing.JLabel jLabelSecondsText15;
+    private javax.swing.JLabel jLabelSecondsText16;
+    private javax.swing.JLabel jLabelSecondsText17;
+    private javax.swing.JLabel jLabelSecondsText18;
+    private javax.swing.JLabel jLabelSecondsText2;
+    private javax.swing.JLabel jLabelSecondsText3;
+    private javax.swing.JLabel jLabelSecondsText4;
+    private javax.swing.JLabel jLabelSecondsText5;
+    private javax.swing.JLabel jLabelSecondsText6;
+    private javax.swing.JLabel jLabelSecondsText7;
+    private javax.swing.JLabel jLabelSecondsText8;
+    private javax.swing.JLabel jLabelSecondsText9;
+    private javax.swing.JLabel jLabelTimeDDLExecText;
+    private javax.swing.JLabel jLabelTimeDDLExecValue;
+    private javax.swing.JLabel jLabelTimeDDLProcessText;
+    private javax.swing.JLabel jLabelTimeDDLProcessValue;
+    private javax.swing.JLabel jLabelTimeDDLQueryText;
+    private javax.swing.JLabel jLabelTimeDDLQueryValue;
+    private javax.swing.JLabel jLabelTimeDDLTransText;
+    private javax.swing.JLabel jLabelTimeDDLTransValue;
+    private javax.swing.JLabel jLabelTimeJOINExecText;
+    private javax.swing.JLabel jLabelTimeJOINExecValue;
+    private javax.swing.JLabel jLabelTimeJOINProcessText;
+    private javax.swing.JLabel jLabelTimeJOINProcessValue;
+    private javax.swing.JLabel jLabelTimeJOINQueryText;
+    private javax.swing.JLabel jLabelTimeJOINQueryValue;
+    private javax.swing.JLabel jLabelTimeJOINTransText;
+    private javax.swing.JLabel jLabelTimeJOINTransactionValue;
+    private javax.swing.JLabel jLabelTimeSELECTExecText;
+    private javax.swing.JLabel jLabelTimeSELECTExecValue;
+    private javax.swing.JLabel jLabelTimeSELECTProcessText;
+    private javax.swing.JLabel jLabelTimeSELECTProcessValue;
+    private javax.swing.JLabel jLabelTimeSELECTQueryText;
+    private javax.swing.JLabel jLabelTimeSELECTQueryValue;
+    private javax.swing.JLabel jLabelTimeSELECTTransText;
+    private javax.swing.JLabel jLabelTimeSELECTTransValue;
+    private javax.swing.JLabel jLabelTimeUPDATEExecText;
+    private javax.swing.JLabel jLabelTimeUPDATEExecValue;
+    private javax.swing.JLabel jLabelTimeUPDATEProcessText;
+    private javax.swing.JLabel jLabelTimeUPDATEProcessValue;
+    private javax.swing.JLabel jLabelTimeUPDATEQueryText;
+    private javax.swing.JLabel jLabelTimeUPDATEQueryValue;
+    private javax.swing.JLabel jLabelTimeUPDATETransText;
+    private javax.swing.JLabel jLabelTimeUPDATETransValue;
+    private javax.swing.JLabel jLabelTitleFinalSimStats;
+    private javax.swing.JLabel jLabelTransLengthText;
+    private javax.swing.JLabel jLabelTransLengthValue;
     // End of variables declaration//GEN-END:variables
 }

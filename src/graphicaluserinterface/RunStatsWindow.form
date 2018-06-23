@@ -25,7 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="jButtonCloseWindow" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
@@ -35,63 +35,63 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINTransText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINExecText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLTransText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLExecText" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel33" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel34" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel35" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel40" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel41" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel42" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLExecValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLTransValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLQueryValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLProcessValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINExecValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINTransValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINQueryValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINProcessValue" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel65" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel57" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel56" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel55" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel52" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel64" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel63" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel62" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText6" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelExecModText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTransModText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelQueryModText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelProcessModText" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelProcessModValue" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelQueriesText4" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel27" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel28" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelExecModValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTransModValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelQueryModValue" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel50" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel49" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel48" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelQueriesText3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelQueriesText2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelQueriesText" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -101,66 +101,66 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelServerRejectConnecText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelConnecLifeTimeText" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelConnecLifeTimeValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelServerRejectConnecValue" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel53" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelConnectionsText" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeUPDATETransText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeUPDATEExecText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeUPDATEQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel37" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel36" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel38" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel39" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel45" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel46" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel47" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeUPDATETransValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeUPDATEExecValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeUPDATEQueryValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeUPDATEProcessValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeSELECTExecValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeSELECTTransValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeSELECTQueryValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTimeSELECTProcessValue" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeUPDATEProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeSELECTExecText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeSELECTTransText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeSELECTQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeSELECTProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel66" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel67" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText12" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText10" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText11" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText13" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText14" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText15" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText16" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText17" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelRunNumberText" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelRunNumberValue" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRunStatisticsTitle" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="53" max="32767" attributes="0"/>
           </Group>
@@ -170,11 +170,11 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabelRunStatisticsTitle" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRunNumberText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRunNumberValue" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="41" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -182,125 +182,125 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelExecModText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelExecModValue" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTransModText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTransModValue" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelQueryModText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelQueryModValue" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel48" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelQueriesText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelConnecLifeTimeText" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel49" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelQueriesText2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelQueriesText3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelServerRejectConnecText" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel51" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelProcessModText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelProcessModValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelQueriesText4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel52" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel58" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLExecText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLExecValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATEExecText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATEExecValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText10" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel59" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLTransText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLTransValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATETransText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATETransValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText11" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel56" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel38" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLQueryText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLQueryValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATEQueryText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATEQueryValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText12" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel57" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel39" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel61" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLProcessText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeDDLProcessValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATEProcessText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeUPDATEProcessValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText13" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel40" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel62" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel44" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel66" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINExecText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINExecValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTExecText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTExecValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText14" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel45" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel67" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINTransText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINTransValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTTransText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTTransValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText15" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel46" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel68" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINQueryText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINQueryValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTQueryText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTQueryValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText16" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel43" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel65" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel69" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINProcessText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeJOINProcessValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTProcessText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelTimeSELECTProcessValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText17" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="40" max="32767" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonCloseWindow" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel53" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelConnecLifeTimeValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSecondsText" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel54" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelServerRejectConnecValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelConnectionsText" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -310,7 +310,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLabelRunStatisticsTitle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="18" style="1"/>
@@ -318,7 +318,7 @@
         <Property name="text" type="java.lang.String" value="Run statistics"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="jLabelRunNumberText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -326,12 +326,12 @@
         <Property name="text" type="java.lang.String" value="Run number:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="jLabelRunNumberValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="jLabelExecModText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -339,7 +339,7 @@
         <Property name="text" type="java.lang.String" value="Execution Module queue average length :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="jLabelTransModText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -347,7 +347,7 @@
         <Property name="text" type="java.lang.String" value="Transaction Module queue average length :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="jLabelQueryModText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -355,7 +355,7 @@
         <Property name="text" type="java.lang.String" value="Query Module queue average length :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
+    <Component class="javax.swing.JLabel" name="jLabelProcessModText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -363,7 +363,7 @@
         <Property name="text" type="java.lang.String" value="Process Module queue average length :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="jLabelServerRejectConnecText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -371,7 +371,7 @@
         <Property name="text" type="java.lang.String" value="Server rejected connections:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="jLabelConnecLifeTimeText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -379,7 +379,7 @@
         <Property name="text" type="java.lang.String" value="Connection average life time:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLExecText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -387,7 +387,7 @@
         <Property name="text" type="java.lang.String" value="Average time of DDL sentences in the Execution Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLTransText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -395,7 +395,7 @@
         <Property name="text" type="java.lang.String" value="Average time of DDL sentences in the Transaction Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel12">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLQueryText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -403,7 +403,7 @@
         <Property name="text" type="java.lang.String" value="Average time of DDL sentences in the Query Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel13">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLProcessText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -411,7 +411,7 @@
         <Property name="text" type="java.lang.String" value="Average time of DDL sentences in the Process Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel14">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATEExecText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -419,7 +419,7 @@
         <Property name="text" type="java.lang.String" value="Average time of UPDATE sentences in the Execution Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel15">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATETransText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -427,7 +427,7 @@
         <Property name="text" type="java.lang.String" value="Average time of UPDATE sentences in the Transaction Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel16">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATEQueryText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -435,7 +435,7 @@
         <Property name="text" type="java.lang.String" value="Average time of UPDATE sentences in the Query Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel17">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATEProcessText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -443,7 +443,7 @@
         <Property name="text" type="java.lang.String" value="Average time of UPDATE sentences in the Process Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel18">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINExecText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -451,7 +451,7 @@
         <Property name="text" type="java.lang.String" value="Average time of JOIN sentences in the Execution Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel19">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINTransText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -459,7 +459,7 @@
         <Property name="text" type="java.lang.String" value="Average time of JOIN sentences in the Transaction Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel20">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINQueryText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -467,7 +467,7 @@
         <Property name="text" type="java.lang.String" value="Average time of JOIN sentences in the Query Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel21">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINProcessText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -475,7 +475,7 @@
         <Property name="text" type="java.lang.String" value="Average time of JOIN sentences in the Process Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel22">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTExecText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -483,7 +483,7 @@
         <Property name="text" type="java.lang.String" value="Average time of SELECT sentences in the Execution Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel23">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTTransText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -491,7 +491,7 @@
         <Property name="text" type="java.lang.String" value="Average time of SELECT sentences in the Transaction Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel24">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTQueryText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -499,7 +499,7 @@
         <Property name="text" type="java.lang.String" value="Average time of SELECT sentences in the Query Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel25">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTProcessText">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
@@ -507,230 +507,230 @@
         <Property name="text" type="java.lang.String" value="Average time of SELECT sentences in the Process Module:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel26">
+    <Component class="javax.swing.JLabel" name="jLabelExecModValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel26"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel27">
+    <Component class="javax.swing.JLabel" name="jLabelTransModValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel27"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel28">
+    <Component class="javax.swing.JLabel" name="jLabelQueryModValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel28"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel29">
+    <Component class="javax.swing.JLabel" name="jLabelProcessModValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel29"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel30">
+    <Component class="javax.swing.JLabel" name="jLabelConnecLifeTimeValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel30"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel31">
+    <Component class="javax.swing.JLabel" name="jLabelServerRejectConnecValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel31"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel32">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLExecValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel32"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel33">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLTransValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel33"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel34">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLQueryValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel34"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel35">
+    <Component class="javax.swing.JLabel" name="jLabelTimeDDLProcessValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel35"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel36">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATEExecValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel36"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel37">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATETransValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel37"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel38">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATEQueryValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel38"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel39">
+    <Component class="javax.swing.JLabel" name="jLabelTimeUPDATEProcessValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel39"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel40">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINExecValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel40"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel41">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINTransValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel41"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel42">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINQueryValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel42"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel43">
+    <Component class="javax.swing.JLabel" name="jLabelTimeJOINProcessValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel43"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel44">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTExecValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel44"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel45">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTTransValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel45"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel46">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTQueryValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel46"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel47">
+    <Component class="javax.swing.JLabel" name="jLabelTimeSELECTProcessValue">
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel47"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="jButtonCloseWindow">
       <Properties>
         <Property name="text" type="java.lang.String" value="Close window"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCloseWindowActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel48">
+    <Component class="javax.swing.JLabel" name="jLabelQueriesText">
       <Properties>
         <Property name="text" type="java.lang.String" value="queries"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel49">
+    <Component class="javax.swing.JLabel" name="jLabelQueriesText2">
       <Properties>
         <Property name="text" type="java.lang.String" value="queries"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel50">
+    <Component class="javax.swing.JLabel" name="jLabelQueriesText3">
       <Properties>
         <Property name="text" type="java.lang.String" value="queries"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel51">
+    <Component class="javax.swing.JLabel" name="jLabelQueriesText4">
       <Properties>
         <Property name="text" type="java.lang.String" value="queries"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel52">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText2">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel53">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel54">
+    <Component class="javax.swing.JLabel" name="jLabelConnectionsText">
       <Properties>
         <Property name="text" type="java.lang.String" value="connections"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel55">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText3">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel56">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText4">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel57">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText5">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel58">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText10">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel59">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText11">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel60">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText12">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel61">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText13">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel62">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText6">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel63">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText7">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel64">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText8">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel65">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText9">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel66">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText14">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel67">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText15">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel68">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText16">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel69">
+    <Component class="javax.swing.JLabel" name="jLabelSecondsText17">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
       </Properties>
