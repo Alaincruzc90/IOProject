@@ -31,7 +31,11 @@ public class SimulationWindow extends javax.swing.JFrame implements Runnable {
             jLabelSlowModeValue.setText("No");
         }
         this.running = true;
-        thread.start();
+        this.thread.start();
+    }
+
+    public void simulationThreadInterrupt() {
+        this.thread.interrupt();
     }
 
     /**
@@ -267,21 +271,26 @@ public class SimulationWindow extends javax.swing.JFrame implements Runnable {
 
     @Override
     public void run() {
-        while (running) {
+        while (this.running) {
             updateSystem();
             jLabelSystemClockValue.setText(hour + ":" + minute + ":" + second + " " + ampm);
-            SimulationParams parameters = this.graphicalInterfaceController.getSimParams();
-            jLabelRunNumberValue.setText(Integer.toString(parameters.getRunNumber()));
-            jLabelExecModLengthValue.setText(Integer.toString(parameters.getexecModQueueLength()));
-            jLabelTransModLengthValue.setText(Integer.toString(parameters.gettransacModQueueLength()));
-            jLabelQueryModLengthValue.setText(Integer.toString(parameters.getqueryModQueueLength()));
-            jLabelProcessModLengthValue.setText(Integer.toString(parameters.getprocessModQueueLength()));
-            jLabelServerRejectedConnValue.setText(Integer.toString(parameters.getserverRejectedConnnections()));
-            if (this.slowMode) {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
+            if(this.graphicalInterfaceController.getSimWindowRunning()) {
+                SimulationParams parameters = this.graphicalInterfaceController.getSimParams();
+                jLabelRunNumberValue.setText(Integer.toString(parameters.getRunNumber()));
+                jLabelExecModLengthValue.setText(Integer.toString(parameters.getexecModQueueLength()));
+                jLabelTransModLengthValue.setText(Integer.toString(parameters.gettransacModQueueLength()));
+                jLabelQueryModLengthValue.setText(Integer.toString(parameters.getqueryModQueueLength()));
+                jLabelProcessModLengthValue.setText(Integer.toString(parameters.getprocessModQueueLength()));
+                jLabelServerRejectedConnValue.setText(Integer.toString(parameters.getserverRejectedConnnections()));
+                if (this.slowMode) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                    }
                 }
+            } else {
+                this.thread.interrupt();
+                this.running=false;
             }
         }
     }

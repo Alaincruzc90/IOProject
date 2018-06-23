@@ -30,13 +30,15 @@ public class GUIController {
     //True if there's an update available for the GUI update.
     private boolean available = false;
 
+    private boolean simWindowRunning = false;
+
     //Simulation parameters to display on the GUI.
     private int runNumber = 1;
     private int execModQueueLength = 0;
     private int transacModQueueLength = 0;
     private int queryModQueueLength = 0;
     private int processModQueueLength = 0;
-    private int serverRejectedConnnections = 0;
+    private int serverRejectedConnections = 0;
 
     //Run stats to display after a repetition.
     private int numberOfUpdates = 0;
@@ -148,6 +150,8 @@ public class GUIController {
         return this.simulation;
     }
 
+    public boolean getSimWindowRunning(){ return this.simWindowRunning;}
+
     /*
     ** Creates a start window.
     */
@@ -161,7 +165,7 @@ public class GUIController {
     ** Start the simulation thread and the simulation window thread.
     */
     public void startSimulation() {
-
+        simWindowRunning = true;
         connectionAvgLifeTimeVector = new double [repetitions];
         this.simulationWindow = new SimulationWindow();
         simulationWindow.setController(this);
@@ -183,7 +187,7 @@ public class GUIController {
     ** @param transacModQueueLength The current length of the transaction module.
     ** @param queryModQueueLength The current length of the query module .
     ** @param processModQueueLength The current length of the process module.
-    ** @param serverRejectedConnnections The current number of rejected connections.
+    ** @param serverRejectedConnections The current number of rejected connections.
     */
     synchronized public void setSimParams(int runNumber, int execModQueueLength, int transacModQueueLength, int queryModQueueLength, int processModQueueLength, int serverRejectedConnnections) {
         while (available) {
@@ -197,7 +201,7 @@ public class GUIController {
         this.transacModQueueLength = transacModQueueLength;
         this.queryModQueueLength = queryModQueueLength;
         this.processModQueueLength = processModQueueLength;
-        this.serverRejectedConnnections = serverRejectedConnnections;
+        this.serverRejectedConnections = serverRejectedConnnections;
         ++numberOfUpdates;
         execModRunTotal += execModQueueLength;
         transacModRunTotal += transacModQueueLength;
@@ -221,7 +225,7 @@ public class GUIController {
         }
         available = false;
         notifyAll();
-        return new SimulationParams(runNumber, execModQueueLength, transacModQueueLength, queryModQueueLength, processModQueueLength, serverRejectedConnnections);
+        return new SimulationParams(runNumber, execModQueueLength, transacModQueueLength, queryModQueueLength, processModQueueLength, serverRejectedConnections);
     }
 
     /*
@@ -247,7 +251,7 @@ public class GUIController {
     synchronized public int displayRunStatsWindow(int totalConnections, double connectionAverageLifeTime, double avgDDLExec, double avgDDLTrans, double avgDDLQuery, double avgDDLProcess, double avgUpdateExec, double avgUpdateTrans, double avgUpdateaQuery, double avgUpdateProcess, double avgJoinExec, double avgJoinTrans, double avgJoinQuery, double avgJoinProcess, double avgSelectExec, double avgSelectTrans, double avgSelectQuery, double avgSelectProcess) {
         RunStatsWindow runStatistics = new RunStatsWindow();
         runStatistics.setVisible(true);
-        runStatistics.setStats(runNumber ,totalConnections , execModRunTotal / numberOfUpdates, transacModRunTotal / numberOfUpdates, querycModRunTotal / numberOfUpdates, processModRunTotal / numberOfUpdates, serverRejectedConnnections, connectionAverageLifeTime, avgDDLExec, avgDDLTrans, avgDDLQuery, avgDDLProcess, avgUpdateExec, avgUpdateTrans, avgUpdateaQuery, avgUpdateProcess, avgJoinExec, avgJoinTrans, avgJoinQuery, avgJoinProcess, avgSelectExec, avgSelectTrans, avgSelectQuery, avgSelectProcess);
+        runStatistics.setStats(runNumber ,totalConnections , execModRunTotal / numberOfUpdates, transacModRunTotal / numberOfUpdates, querycModRunTotal / numberOfUpdates, processModRunTotal / numberOfUpdates, serverRejectedConnections, connectionAverageLifeTime, avgDDLExec, avgDDLTrans, avgDDLQuery, avgDDLProcess, avgUpdateExec, avgUpdateTrans, avgUpdateaQuery, avgUpdateProcess, avgJoinExec, avgJoinTrans, avgJoinQuery, avgJoinProcess, avgSelectExec, avgSelectTrans, avgSelectQuery, avgSelectProcess);
         /*Save the simulation stats*/
         totalSimConnections += totalConnections;
         execModAvgTotal += execModRunTotal / numberOfUpdates;
@@ -261,8 +265,8 @@ public class GUIController {
         else{
             connectionAvgLifeTimeVector[runNumber-1]=0;
         }
-        if(!(Double.isNaN(serverRejectedConnnections))){
-            totalRejectedConnections += serverRejectedConnnections;
+        if(!(Double.isNaN(serverRejectedConnections))){
+            totalRejectedConnections += serverRejectedConnections;
         }
         if(!(Double.isNaN(avgDDLExec))){
             ddlAvgTimeExec += avgDDLExec;
@@ -325,7 +329,10 @@ public class GUIController {
     /*
     ** Creates a new window to display the general simulation statistics, after display the last repetition.
     */
-    public int displayFinalStatsWindow() {
+    synchronized public int displayFinalStatsWindow() {
+        this.simWindowRunning =false;
+        this.available=true;
+        notifyAll();
         this.simulationWindow.dispose();
         FinalStatsWindow finalStatistics = new FinalStatsWindow();
         finalStatistics.setController(this);
@@ -344,7 +351,7 @@ public class GUIController {
         transacModQueueLength = 0;
         queryModQueueLength = 0;
         processModQueueLength = 0;
-        serverRejectedConnnections = 0;
+        serverRejectedConnections = 0;
         numberOfUpdates = 0;
         execModRunTotal = 0;
         transacModRunTotal = 0;
@@ -372,6 +379,10 @@ public class GUIController {
         selectAvgTimeTrans = 0;
         selectAvgTimeQuery = 0;
         selectAvgTimeProcess = 0;
+        simulation.interrupt();
+        simulationWindow.simulationThreadInterrupt();
+        simulation=null;
+        simulationWindow=null;
         this.startGUI();
     }
 
@@ -394,7 +405,7 @@ public class GUIController {
         transacModQueueLength = 0;
         queryModQueueLength = 0;
         processModQueueLength = 0;
-        serverRejectedConnnections = 0;
+        serverRejectedConnections = 0;
         numberOfUpdates = 0;
         execModRunTotal = 0;
         transacModRunTotal = 0;
@@ -422,6 +433,10 @@ public class GUIController {
         selectAvgTimeTrans = 0;
         selectAvgTimeQuery = 0;
         selectAvgTimeProcess = 0;
+        simulation.interrupt();
+        simulationWindow.simulationThreadInterrupt();
+        simulation=null;
+        simulationWindow=null;
         this.startGUI();
     }
 }
