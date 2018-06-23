@@ -26,52 +26,6 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelTimeDDLExecText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeDDLTransText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeDDLQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeDDLProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeJOINExecText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeJOINTransText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeJOINQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeJOINProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelTimeJOINProcessValue" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeJOINQueryValue" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeJOINTransactionValue" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeJOINExecValue" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeDDLProcessValue" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeDDLQueryValue" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeDDLTransValue" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelTimeDDLExecValue" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelSecondsText" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSecondsText2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSecondsText3" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSecondsText4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSecondsText5" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSecondsText6" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSecondsText7" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSecondsText8" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="99" pref="607" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jLabelRepetitionsText" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabelRepetitionsValue" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jLabelTitleFinalSimStats" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="831" max="32767" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabelExecLengthText" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -93,7 +47,7 @@
                           <Component id="jLabelQueriesText2" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabelQueriesText" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="31" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -155,17 +109,69 @@
                                       <Component id="jLabelSecondsText10" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabelRejectedConnectionsValue" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabelConnectionsText" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabelConnectAvLifeTimeValue" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabelSecondsText9" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabelRejectedConnectionsValue" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelConnectionsReceivedValue" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabelConnectionsText2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelConnectionsText" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                           </Group>
+                          <Component id="jLabelConnectionsReceivedText" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="91" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabelTimeDDLExecText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLTransText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINExecText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINTransText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINQueryText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINProcessText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabelTimeJOINProcessValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINQueryValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINTransactionValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeJOINExecValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLProcessValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLQueryValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLTransValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTimeDDLExecValue" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabelSecondsText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSecondsText8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabelRepetitionsText" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabelRepetitionsValue" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabelTitleFinalSimStats" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -197,7 +203,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="89" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="78" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
@@ -240,13 +246,7 @@
                                           </Group>
                                           <Component id="jLabelRejectedConnectionsText" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabelModuleLengthText" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelModuleLengthValue" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelQueriesText4" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -260,6 +260,23 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabelRejectedConnectionsValue" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabelConnectionsText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabelModuleLengthText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelModuleLengthValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelQueriesText4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabelConnectionsReceivedText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="jLabelConnectionsText2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelConnectionsReceivedValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -846,6 +863,24 @@
     <Component class="javax.swing.JLabel" name="jLabelSecondsText18">
       <Properties>
         <Property name="text" type="java.lang.String" value="seconds"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelConnectionsReceivedText">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Total connections received: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelConnectionsReceivedValue">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelConnectionsText2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="connections"/>
       </Properties>
     </Component>
   </SubComponents>

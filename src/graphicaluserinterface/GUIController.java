@@ -46,6 +46,7 @@ public class GUIController {
     private int processModRunTotal = 0;
 
     //Simulation stats to display on the final stats window.
+    private int totalSimConnections = 0;
     private double execModAvgTotal = 0;
     private double transacModAvgTotal = 0;
     private double querycModAvgTotal = 0;
@@ -243,11 +244,12 @@ public class GUIController {
     ** @param avgSelectQuery Average time of SELECT sentences in the Query Module.
     ** @param avgSelectProcess Average time of SELECT sentences in the Process Module.
     */
-    synchronized public int displayRunStatsWindow(double connectionAverageLifeTime, double avgDDLExec, double avgDDLTrans, double avgDDLQuery, double avgDDLProcess, double avgUpdateExec, double avgUpdateTrans, double avgUpdateaQuery, double avgUpdateProcess, double avgJoinExec, double avgJoinTrans, double avgJoinQuery, double avgJoinProcess, double avgSelectExec, double avgSelectTrans, double avgSelectQuery, double avgSelectProcess) {
+    synchronized public int displayRunStatsWindow(int totalConnections, double connectionAverageLifeTime, double avgDDLExec, double avgDDLTrans, double avgDDLQuery, double avgDDLProcess, double avgUpdateExec, double avgUpdateTrans, double avgUpdateaQuery, double avgUpdateProcess, double avgJoinExec, double avgJoinTrans, double avgJoinQuery, double avgJoinProcess, double avgSelectExec, double avgSelectTrans, double avgSelectQuery, double avgSelectProcess) {
         RunStatsWindow runStatistics = new RunStatsWindow();
         runStatistics.setVisible(true);
-        runStatistics.setStats(runNumber, execModRunTotal / numberOfUpdates, transacModRunTotal / numberOfUpdates, querycModRunTotal / numberOfUpdates, processModRunTotal / numberOfUpdates, serverRejectedConnnections, connectionAverageLifeTime, avgDDLExec, avgDDLTrans, avgDDLQuery, avgDDLProcess, avgUpdateExec, avgUpdateTrans, avgUpdateaQuery, avgUpdateProcess, avgJoinExec, avgJoinTrans, avgJoinQuery, avgJoinProcess, avgSelectExec, avgSelectTrans, avgSelectQuery, avgSelectProcess);
+        runStatistics.setStats(runNumber ,totalConnections , execModRunTotal / numberOfUpdates, transacModRunTotal / numberOfUpdates, querycModRunTotal / numberOfUpdates, processModRunTotal / numberOfUpdates, serverRejectedConnnections, connectionAverageLifeTime, avgDDLExec, avgDDLTrans, avgDDLQuery, avgDDLProcess, avgUpdateExec, avgUpdateTrans, avgUpdateaQuery, avgUpdateProcess, avgJoinExec, avgJoinTrans, avgJoinQuery, avgJoinProcess, avgSelectExec, avgSelectTrans, avgSelectQuery, avgSelectProcess);
         /*Save the simulation stats*/
+        totalSimConnections += totalConnections;
         execModAvgTotal += execModRunTotal / numberOfUpdates;
         transacModAvgTotal += transacModRunTotal / numberOfUpdates;
         querycModAvgTotal += querycModRunTotal / numberOfUpdates;
@@ -328,7 +330,7 @@ public class GUIController {
         FinalStatsWindow finalStatistics = new FinalStatsWindow();
         finalStatistics.setController(this);
         finalStatistics.setVisible(true);
-        finalStatistics.setFinalStats(repetitions, execModAvgTotal / repetitions, transacModAvgTotal / repetitions, querycModAvgTotal / repetitions, processModAvgTotal / repetitions, connectionAvgLifeTime / repetitions, connectionAvgLifeTimeVector,totalRejectedConnections / repetitions, ddlAvgTimeExec / repetitions, ddlAvgTimeTrans / repetitions, ddlAvgTimeQuery / repetitions, ddlAvgTimeProcess / repetitions, updateAvgTimeExec / repetitions, updateAvgTimeTrans / repetitions, updateAvgTimeQuery / repetitions, updateAvgTimeProcess / repetitions, joinAvgTimeExec / repetitions, joinAvgTimeTrans / repetitions, joinAvgTimeQuery / repetitions, joinAvgTimeProcess / repetitions, selectAvgTimeExec / repetitions, selectAvgTimeTrans / repetitions, selectAvgTimeQuery / repetitions, selectAvgTimeProcess / repetitions);
+        finalStatistics.setFinalStats(repetitions, totalSimConnections, execModAvgTotal / repetitions, transacModAvgTotal / repetitions, querycModAvgTotal / repetitions, processModAvgTotal / repetitions, connectionAvgLifeTime / repetitions, connectionAvgLifeTimeVector,totalRejectedConnections / repetitions, ddlAvgTimeExec / repetitions, ddlAvgTimeTrans / repetitions, ddlAvgTimeQuery / repetitions, ddlAvgTimeProcess / repetitions, updateAvgTimeExec / repetitions, updateAvgTimeTrans / repetitions, updateAvgTimeQuery / repetitions, updateAvgTimeProcess / repetitions, joinAvgTimeExec / repetitions, joinAvgTimeTrans / repetitions, joinAvgTimeQuery / repetitions, joinAvgTimeProcess / repetitions, selectAvgTimeExec / repetitions, selectAvgTimeTrans / repetitions, selectAvgTimeQuery / repetitions, selectAvgTimeProcess / repetitions);
         return 1;
     }
     

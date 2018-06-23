@@ -100,6 +100,9 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         jLabelSecondsText16 = new javax.swing.JLabel();
         jLabelSecondsText17 = new javax.swing.JLabel();
         jLabelSecondsText18 = new javax.swing.JLabel();
+        jLabelConnectionsReceivedText = new javax.swing.JLabel();
+        jLabelConnectionsReceivedValue = new javax.swing.JLabel();
+        jLabelConnectionsText2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -293,6 +296,13 @@ public class FinalStatsWindow extends javax.swing.JFrame {
 
         jLabelSecondsText18.setText("seconds");
 
+        jLabelConnectionsReceivedText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelConnectionsReceivedText.setText("Total connections received: ");
+
+        jLabelConnectionsReceivedValue.setText("jLabel2");
+
+        jLabelConnectionsText2.setText("connections");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -300,45 +310,6 @@ public class FinalStatsWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(59, 59, 59)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelTimeDDLExecText)
-                            .addComponent(jLabelTimeDDLTransText)
-                            .addComponent(jLabelTimeDDLQueryText)
-                            .addComponent(jLabelTimeDDLProcessText)
-                            .addComponent(jLabelTimeJOINExecText)
-                            .addComponent(jLabelTimeJOINTransText)
-                            .addComponent(jLabelTimeJOINQueryText)
-                            .addComponent(jLabelTimeJOINProcessText))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelTimeJOINProcessValue)
-                            .addComponent(jLabelTimeJOINQueryValue)
-                            .addComponent(jLabelTimeJOINTransactionValue)
-                            .addComponent(jLabelTimeJOINExecValue)
-                            .addComponent(jLabelTimeDDLProcessValue)
-                            .addComponent(jLabelTimeDDLQueryValue)
-                            .addComponent(jLabelTimeDDLTransValue)
-                            .addComponent(jLabelTimeDDLExecValue))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelSecondsText)
-                            .addComponent(jLabelSecondsText2)
-                            .addComponent(jLabelSecondsText3)
-                            .addComponent(jLabelSecondsText4)
-                            .addComponent(jLabelSecondsText5)
-                            .addComponent(jLabelSecondsText6)
-                            .addComponent(jLabelSecondsText7)
-                            .addComponent(jLabelSecondsText8))
-                        .addGap(99, 607, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabelRepetitionsText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabelRepetitionsValue))
-                            .addComponent(jLabelTitleFinalSimStats))
-                        .addContainerGap(831, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelExecLengthText)
@@ -357,7 +328,7 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                             .addComponent(jLabelQueriesText4)
                             .addComponent(jLabelQueriesText2)
                             .addComponent(jLabelQueriesText))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -408,13 +379,56 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabelSecondsText10))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabelRejectedConnectionsValue)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabelConnectionsText))
-                                    .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabelConnectAvLifeTimeValue)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabelSecondsText9)))))
+                                        .addComponent(jLabelSecondsText9))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabelRejectedConnectionsValue)
+                                            .addComponent(jLabelConnectionsReceivedValue))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabelConnectionsText2)
+                                            .addComponent(jLabelConnectionsText)))))
+                            .addComponent(jLabelConnectionsReceivedText))
+                        .addContainerGap(91, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelTimeDDLExecText)
+                                    .addComponent(jLabelTimeDDLTransText)
+                                    .addComponent(jLabelTimeDDLQueryText)
+                                    .addComponent(jLabelTimeDDLProcessText)
+                                    .addComponent(jLabelTimeJOINExecText)
+                                    .addComponent(jLabelTimeJOINTransText)
+                                    .addComponent(jLabelTimeJOINQueryText)
+                                    .addComponent(jLabelTimeJOINProcessText))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelTimeJOINProcessValue)
+                                    .addComponent(jLabelTimeJOINQueryValue)
+                                    .addComponent(jLabelTimeJOINTransactionValue)
+                                    .addComponent(jLabelTimeJOINExecValue)
+                                    .addComponent(jLabelTimeDDLProcessValue)
+                                    .addComponent(jLabelTimeDDLQueryValue)
+                                    .addComponent(jLabelTimeDDLTransValue)
+                                    .addComponent(jLabelTimeDDLExecValue))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelSecondsText)
+                                    .addComponent(jLabelSecondsText2)
+                                    .addComponent(jLabelSecondsText3)
+                                    .addComponent(jLabelSecondsText4)
+                                    .addComponent(jLabelSecondsText5)
+                                    .addComponent(jLabelSecondsText6)
+                                    .addComponent(jLabelSecondsText7)
+                                    .addComponent(jLabelSecondsText8)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabelRepetitionsText)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabelRepetitionsValue))
+                            .addComponent(jLabelTitleFinalSimStats))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -438,7 +452,7 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                             .addComponent(jLabelRepetitionsValue))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 89, Short.MAX_VALUE)
+                        .addGap(0, 78, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(36, 36, 36)
@@ -470,12 +484,7 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                                                     .addComponent(jLabelQueryLengthValue)
                                                     .addComponent(jLabelQueriesText3)
                                                     .addComponent(jLabelQueryLengthText)))
-                                            .addComponent(jLabelRejectedConnectionsText, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabelModuleLengthText)
-                                    .addComponent(jLabelModuleLengthValue)
-                                    .addComponent(jLabelQueriesText4)))
+                                            .addComponent(jLabelRejectedConnectionsText, javax.swing.GroupLayout.Alignment.TRAILING)))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(57, 57, 57)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -486,6 +495,18 @@ public class FinalStatsWindow extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabelRejectedConnectionsValue)
                                     .addComponent(jLabelConnectionsText))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabelModuleLengthText)
+                                .addComponent(jLabelModuleLengthValue)
+                                .addComponent(jLabelQueriesText4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelConnectionsReceivedText)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabelConnectionsText2)
+                                        .addComponent(jLabelConnectionsReceivedValue)))))
                         .addGap(18, 18, 18)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -641,7 +662,8 @@ public class FinalStatsWindow extends javax.swing.JFrame {
         });
     }
     
-    public void setFinalStats(int repetitions, double execModAvgTotal, double transacModAvgTotal, double querycModAvgTotal, double processModAvgTotal, double connectionAvgLifeTime, double[] connectionAvgLifeTimeVector,double avgRejectedConnections, double ddlAvgTimeExec, double ddlAvgTimeTrans, double ddlAvgTimeQuery, double ddlAvgTimeProcess, double updateAvgTimeExec, double updateAvgTimeTrans, double updateAvgTimeQuery, double updateAvgTimeProcess, double joinAvgTimeExec, double joinAvgTimeTrans, double joinAvgTimeQuery, double joinAvgTimeProcess, double selectAvgTimeExec, double selectAvgTimeTrans, double selectAvgTimeQuery, double selectAvgTimeProcess) {
+    public void setFinalStats(int repetitions, int totalSimConnections ,double execModAvgTotal, double transacModAvgTotal, double querycModAvgTotal, double processModAvgTotal, double connectionAvgLifeTime, double[] connectionAvgLifeTimeVector,double avgRejectedConnections, double ddlAvgTimeExec, double ddlAvgTimeTrans, double ddlAvgTimeQuery, double ddlAvgTimeProcess, double updateAvgTimeExec, double updateAvgTimeTrans, double updateAvgTimeQuery, double updateAvgTimeProcess, double joinAvgTimeExec, double joinAvgTimeTrans, double joinAvgTimeQuery, double joinAvgTimeProcess, double selectAvgTimeExec, double selectAvgTimeTrans, double selectAvgTimeQuery, double selectAvgTimeProcess) {
+        jLabelConnectionsReceivedValue.setText(decimalFormat.format(totalSimConnections));
         jLabelRepetitionsValue.setText(decimalFormat.format(repetitions));
         jLabelExecLengthValue.setText(decimalFormat.format(execModAvgTotal));
         jLabelTransLengthValue.setText(decimalFormat.format(transacModAvgTotal));
@@ -759,7 +781,10 @@ public class FinalStatsWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelConfidenceIntervalValue;
     private javax.swing.JLabel jLabelConnectAvLifeTimeText;
     private javax.swing.JLabel jLabelConnectAvLifeTimeValue;
+    private javax.swing.JLabel jLabelConnectionsReceivedText;
+    private javax.swing.JLabel jLabelConnectionsReceivedValue;
     private javax.swing.JLabel jLabelConnectionsText;
+    private javax.swing.JLabel jLabelConnectionsText2;
     private javax.swing.JLabel jLabelExecLengthText;
     private javax.swing.JLabel jLabelExecLengthValue;
     private javax.swing.JLabel jLabelModuleLengthText;

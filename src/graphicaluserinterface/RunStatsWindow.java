@@ -91,6 +91,9 @@ public class RunStatsWindow extends javax.swing.JFrame {
         jLabelSecondsText15 = new javax.swing.JLabel();
         jLabelSecondsText16 = new javax.swing.JLabel();
         jLabelSecondsText17 = new javax.swing.JLabel();
+        jLabelConnectionsReceivedText = new javax.swing.JLabel();
+        jLabelConnectionsReceivedValue = new javax.swing.JLabel();
+        jLabelConnectionsText2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -263,6 +266,13 @@ public class RunStatsWindow extends javax.swing.JFrame {
 
         jLabelSecondsText17.setText("seconds");
 
+        jLabelConnectionsReceivedText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelConnectionsReceivedText.setText("Connections received: ");
+
+        jLabelConnectionsReceivedValue.setText("jLabel2");
+
+        jLabelConnectionsText2.setText("connections");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -332,18 +342,6 @@ public class RunStatsWindow extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelServerRejectConnecText)
-                                    .addComponent(jLabelConnecLifeTimeText))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelConnecLifeTimeValue)
-                                    .addComponent(jLabelServerRejectConnecValue))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelConnectionsText)
-                                    .addComponent(jLabelSecondsText)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabelTimeUPDATETransText)
@@ -373,7 +371,26 @@ public class RunStatsWindow extends javax.swing.JFrame {
                                     .addComponent(jLabelSecondsText14)
                                     .addComponent(jLabelSecondsText15)
                                     .addComponent(jLabelSecondsText16)
-                                    .addComponent(jLabelSecondsText17)))))
+                                    .addComponent(jLabelSecondsText17)))
+                            .addComponent(jLabelServerRejectConnecText)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelConnecLifeTimeText)
+                                    .addComponent(jLabelConnectionsReceivedText))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabelConnectionsReceivedValue)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabelConnectionsText2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabelConnecLifeTimeValue)
+                                            .addComponent(jLabelServerRejectConnecValue))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabelConnectionsText)
+                                            .addComponent(jLabelSecondsText)))))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabelRunNumberText)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -411,11 +428,17 @@ public class RunStatsWindow extends javax.swing.JFrame {
                                     .addComponent(jLabelQueriesText)
                                     .addComponent(jLabelConnecLifeTimeText))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabelQueriesText2)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabelQueriesText2)
+                                    .addComponent(jLabelServerRejectConnecText)
+                                    .addComponent(jLabelServerRejectConnecValue)
+                                    .addComponent(jLabelConnectionsText))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabelQueriesText3)
-                                    .addComponent(jLabelServerRejectConnecText))))
+                                    .addComponent(jLabelConnectionsReceivedText)
+                                    .addComponent(jLabelConnectionsReceivedValue)
+                                    .addComponent(jLabelConnectionsText2))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelProcessModText)
@@ -492,10 +515,6 @@ public class RunStatsWindow extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelConnecLifeTimeValue)
                             .addComponent(jLabelSecondsText))
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelServerRejectConnecValue)
-                            .addComponent(jLabelConnectionsText))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -537,7 +556,8 @@ public class RunStatsWindow extends javax.swing.JFrame {
         });
     }
 
-    public void setStats(int runNumber, double execModQueueLength, double transModQueueLength, double queryModQueueLength, double processModQueueLength, int rejectedConnections, double connectionAverageLifeTime, double avgDDLExec, double avgDDLTrans, double avgDDLQuery, double avgDDLProcess, double avgUpdateExec, double avgUpdateTrans, double avgUpdateaQuery, double avgUpdateProcess, double avgJoinExec, double avgJoinTrans, double avgJoinQuery, double avgJoinProcess, double avgSelectExec, double avgSelectTrans, double avgSelectQuery, double avgSelectProcess) {
+    public void setStats(int runNumber, int totalConnections, double execModQueueLength, double transModQueueLength, double queryModQueueLength, double processModQueueLength, int rejectedConnections, double connectionAverageLifeTime, double avgDDLExec, double avgDDLTrans, double avgDDLQuery, double avgDDLProcess, double avgUpdateExec, double avgUpdateTrans, double avgUpdateaQuery, double avgUpdateProcess, double avgJoinExec, double avgJoinTrans, double avgJoinQuery, double avgJoinProcess, double avgSelectExec, double avgSelectTrans, double avgSelectQuery, double avgSelectProcess) {
+        jLabelConnectionsReceivedValue.setText(decimalFormat.format(totalConnections));
         jLabelRunNumberValue.setText(decimalFormat.format(runNumber));
         jLabelExecModValue.setText(decimalFormat.format(execModQueueLength));
         jLabelTransModValue.setText(decimalFormat.format(transModQueueLength));
@@ -635,7 +655,10 @@ public class RunStatsWindow extends javax.swing.JFrame {
     private javax.swing.JButton jButtonCloseWindow;
     private javax.swing.JLabel jLabelConnecLifeTimeText;
     private javax.swing.JLabel jLabelConnecLifeTimeValue;
+    private javax.swing.JLabel jLabelConnectionsReceivedText;
+    private javax.swing.JLabel jLabelConnectionsReceivedValue;
     private javax.swing.JLabel jLabelConnectionsText;
+    private javax.swing.JLabel jLabelConnectionsText2;
     private javax.swing.JLabel jLabelExecModText;
     private javax.swing.JLabel jLabelExecModValue;
     private javax.swing.JLabel jLabelProcessModText;
